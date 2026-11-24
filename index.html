@@ -1,0 +1,4084 @@
+
+Discovering_Indonesian_Heritage.html
+100%
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="artifact-type" content="narrative">
+  <meta name="design-style" content="terracotta">
+  <title>Discovering Indonesian Heritage — Descriptive Text &amp; Reading Strategies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+
+      /* Page and surfaces (Terracotta style) */
+      --background: #f9f3eb;
+      --surface-container-low: #f3e9dc;
+      --surface-container: #ede0d0;
+      --surface-container-high: #e4d4c0;
+      --surface-paper: #fdfaf5;
+
+      /* Ink */
+      --on-surface: #261b15;
+      --on-surface-variant: #57483f;
+
+      /* Borders */
+      --outline: #9e8a78;
+      --outline-variant: #dfd0be;
+      --primary-border: #c98a6b;
+      --tertiary-border: #b5d6c9;
+      --secondary-btn-border: #c4b29e;
+      --error-border: #dfb3b3;
+      --warning-border: #dfc794;
+
+      /* Accents */
+      --primary: #b84a24;
+      --primary-hover: #9c3c1b;
+      --on-primary: #ffffff;
+      --primary-container: #f7ebe0;
+      --on-primary-container: #7d2e12;
+      --secondary: #8f6524;
+      --secondary-container: #f5ebd8;
+      --tertiary: #1d6356;
+      --tertiary-container: #e1efe9;
+      --on-tertiary-container: #13473d;
+      --error: #b82929;
+      --error-container: #fbecec;
+      --on-error-container: #7a1818;
+      --on-error: #ffffff;
+
+      /* Semantic */
+      --positive: #1d6356;
+      --positive-container: #e1efe9;
+      --warning: #8f5c14;
+      --warning-container: #faf0da;
+      --focus: #b84a24;
+
+      /* Data series */
+      --data-1: #b84a24;
+      --data-2: #1d6356;
+      --data-3: #b5893e;
+      --data-4: #8c3838;
+      --data-context: #a39384;
+
+      /* Heritage Illustration Palette */
+      --sky-dawn-top: #e8cbb1;
+      --sky-dawn-mid: #f4dec4;
+      --sky-dawn-low: #f9ecda;
+      --sky-dusk-top: #d9b694;
+      --sky-dusk-mid: #ecd0ae;
+      --sky-dusk-low: #f7e6cf;
+      --sun-glow: #fff2d6;
+      --mountain-far: #cbb5a3;
+      --mountain-mid: #ae9684;
+      --mist-veil: #f7ede0;
+      --stone-dark: #453c36;
+      --stone-mid: #63574e;
+      --stone-light: #85766a;
+      --stone-sunlit: #b59e88;
+      --foliage-dark: #344a3f;
+      --foliage-mid: #4a6657;
+      --backdrop-scrim: rgba(38, 27, 21, 0.45);
+      --white: #ffffff;
+
+      /* Highlight washes for MOT / Evidence */
+      --hl-ident-bg: #f6dfd3;
+      --hl-ident-border: #b84a24;
+      --hl-desc-bg: #dceee7;
+      --hl-desc-border: #1d6356;
+      --hl-verb-bg: #f3e5c7;
+      --hl-adj-bg: #e7ddf3;
+      --hl-adj-ink: #4d2e75;
+      --hl-prep-bg: #dceaf4;
+      --hl-prep-ink: #1f4d6e;
+      --hl-evidence-bg: #fbe29d;
+
+      /* Fonts */
+      --font-headline: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-label: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      /* Type Scale (Narrative + Interactive Lesson) */
+      --display-size: clamp(2.25rem, 1.35rem + 3.2vw, 3.625rem);
+      --headline-size: clamp(1.625rem, 1.2rem + 1.5vw, 2.25rem);
+      --subhead-size: clamp(1.2rem, 1.05rem + 0.55vw, 1.45rem);
+      --body-size: clamp(1rem, 0.96rem + 0.2vw, 1.09375rem);
+      --label-size: 0.75rem;
+
+      /* Spacing scale (4pt base) */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2.5rem;
+      --space-2xl: 4rem;
+
+      /* Shape */
+      --rounded: 0.375rem;
+      --rounded-lg: 0.75rem;
+      --rounded-arch: 28px 28px 6px 6px;
+      --rounded-full: 9999px;
+
+      /* Style effects */
+      --soft-shadow: 0 4px 18px rgba(38, 27, 21, 0.05);
+      --soft-shadow-raised: 0 10px 30px rgba(38, 27, 21, 0.09);
+      --warm-hairline: 1px solid var(--outline-variant);
+      --brass-gradient: linear-gradient(90deg, #d8c3b0, #b5893e, #d8c3b0);
+
+      /* Motion */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-micro: 140ms;
+      --dur-short: 240ms;
+      --dur-long: 420ms;
+    }
+
+    /* Base reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { overflow-x: clip; margin: 0; padding: 0; }
+    header { position: static !important; }
+
+    body {
+      background-color: var(--background);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    /* App Container */
+    .app-shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: var(--space-md) var(--space-lg) var(--space-2xl);
+    }
+
+    /* Top Course Bar */
+    .course-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding-bottom: var(--space-md);
+      border-bottom: var(--warm-hairline);
+      margin-bottom: var(--space-md);
+    }
+
+    .brand-cluster {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+
+    .brand-kicker {
+      font-family: var(--font-label);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--secondary);
+    }
+
+    .brand-title {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 1.1;
+      color: var(--on-surface);
+      margin: 0;
+    }
+
+    .brand-title em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    .topbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .progress-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+      border: 1px solid var(--tertiary-border);
+      padding: 6px 14px;
+      border-radius: var(--rounded-full);
+      font-size: var(--label-size);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .progress-pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: var(--rounded-full);
+      background: var(--tertiary);
+    }
+
+    /* Step-by-Step Progress Indicator */
+    .stepper-wrap {
+      background: var(--surface-container-low);
+      border: var(--warm-hairline);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-md) var(--space-lg);
+      margin-bottom: var(--space-xl);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .stepper-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-sm);
+    }
+
+    .stepper-stage-label {
+      font-size: var(--label-size);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    .stepper-time-label {
+      font-size: var(--label-size);
+      font-weight: 600;
+      color: var(--on-surface-variant);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stepper-track-bar {
+      width: 100%;
+      height: 6px;
+      background: var(--surface-container-high);
+      border-radius: var(--rounded-full);
+      overflow: hidden;
+      margin-bottom: var(--space-md);
+    }
+
+    .stepper-track-fill {
+      height: 100%;
+      background: var(--primary);
+      border-radius: var(--rounded-full);
+      transition: width var(--dur-long) var(--ease-out);
+      width: 0%;
+    }
+
+    .stepper-nav {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: var(--space-sm);
+    }
+
+    .step-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      padding: 10px 12px;
+      min-height: 44px;
+      background: var(--background);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      cursor: pointer;
+      text-align: left;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out);
+    }
+
+    .step-btn:hover {
+      background: var(--primary-container);
+      border-color: var(--primary-border);
+    }
+
+    .step-btn.is-active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .step-btn.is-done {
+      background: var(--tertiary-container);
+      border-color: var(--tertiary-border);
+      color: var(--on-tertiary-container);
+    }
+
+    .step-btn.is-active.is-done {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .step-num {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+
+    .step-name {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    /* Page View Transitions */
+    .lesson-page {
+      display: none;
+      animation: pageEnter var(--dur-long) var(--ease-out);
+    }
+
+    .lesson-page.is-active {
+      display: block;
+    }
+
+    @keyframes pageEnter {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Typography Helpers */
+    .display-title {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: var(--display-size);
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+      margin: 0 0 var(--space-md);
+      color: var(--on-surface);
+    }
+
+    .display-title em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    .section-title {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: var(--headline-size);
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+      margin: 0 0 var(--space-sm);
+      color: var(--on-surface);
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    .subhead-title {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: var(--subhead-size);
+      line-height: 1.22;
+      margin: 0 0 var(--space-sm);
+      color: var(--on-surface);
+    }
+
+    .kicker-label {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: var(--space-xs);
+      display: block;
+    }
+
+    .lead-copy {
+      font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.2rem);
+      color: var(--on-surface-variant);
+      max-width: 65ch;
+      margin: 0 0 var(--space-lg);
+    }
+
+    /* Brass Diamond Ornamental Rule */
+    .ornament-rule {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-block: var(--space-lg);
+      color: var(--secondary);
+      font-family: var(--font-label);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .ornament-rule::before,
+    .ornament-rule::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--brass-gradient);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 10px 22px;
+      border-radius: var(--rounded-full);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      text-decoration: none;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out), box-shadow var(--dur-micro) var(--ease-out);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--on-primary);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background: var(--primary-hover);
+      box-shadow: var(--soft-shadow-raised);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border-color: var(--secondary-btn-border);
+      color: var(--on-surface);
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      background: var(--surface-container-low);
+      border-color: var(--outline);
+    }
+
+    .btn-emerald {
+      background: var(--tertiary);
+      color: var(--on-primary);
+    }
+
+    .btn-emerald:hover:not(:disabled) {
+      background: var(--on-tertiary-container);
+    }
+
+    .btn-sm {
+      min-height: 36px;
+      padding: 6px 14px;
+      font-size: 0.8125rem;
+    }
+
+    .btn-lg {
+      min-height: 52px;
+      padding: 14px 30px;
+      font-size: 1rem;
+    }
+
+    /* Badges */
+    .badge-emerald {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+      border: 1px solid var(--tertiary-border);
+      padding: 4px 12px;
+      border-radius: var(--rounded-full);
+      font-family: var(--font-label);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .badge-terracotta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      border: 1px solid var(--primary-border);
+      padding: 4px 12px;
+      border-radius: var(--rounded-full);
+      font-family: var(--font-label);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .badge-brass {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--secondary-container);
+      color: var(--secondary);
+      border: 1px solid var(--warning-border);
+      padding: 4px 12px;
+      border-radius: var(--rounded-full);
+      font-family: var(--font-label);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Terracotta Signature Arch Cards */
+    .arch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+      gap: var(--space-lg);
+      margin-block: var(--space-lg);
+    }
+
+    .arch-card {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-arch);
+      padding: 24px 20px 20px;
+      text-align: center;
+      box-shadow: var(--soft-shadow);
+      transition: transform var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out);
+    }
+
+    .arch-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--soft-shadow-raised);
+    }
+
+    .arch-card.is-featured {
+      background: var(--primary-container);
+      border-color: var(--primary-border);
+    }
+
+    .arch-card-label {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: var(--space-xs);
+    }
+
+    .arch-card-figure {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: 1.85rem;
+      line-height: 1.1;
+      color: var(--on-surface);
+      margin-bottom: var(--space-xs);
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+
+    .arch-card-caption {
+      font-size: 0.875rem;
+      color: var(--tertiary);
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .arch-card-body {
+      font-size: 0.9375rem;
+      color: var(--on-surface-variant);
+      margin: var(--space-sm) 0 0;
+      line-height: 1.5;
+    }
+
+    /* Standard Content Panels */
+    .panel {
+      background: var(--surface-paper);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-xl);
+      box-shadow: var(--soft-shadow);
+      margin-bottom: var(--space-xl);
+    }
+
+    .panel-sand {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-lg);
+    }
+
+    .panel-band {
+      background: var(--surface-container);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-lg);
+    }
+
+    /* Hero Layout */
+    .hero-split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      gap: var(--space-xl);
+      align-items: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .landmark-frame {
+      position: relative;
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      overflow: hidden;
+      box-shadow: var(--soft-shadow-raised);
+    }
+
+    .landmark-frame svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .landmark-caption {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      padding: 12px 16px;
+      background: var(--surface-container-low);
+      border-top: var(--warm-hairline);
+      font-size: 0.8125rem;
+      color: var(--on-surface-variant);
+    }
+
+    .landmark-caption strong {
+      color: var(--on-surface);
+    }
+
+    /* Hotspot Pins on Visual Exploration */
+    .hotspot-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      padding: 12px 16px;
+      background: var(--surface-paper);
+      border-top: var(--warm-hairline);
+    }
+
+    .hotspot-chip {
+      min-height: 36px;
+      padding: 6px 12px;
+      border-radius: var(--rounded-full);
+      border: 1px solid var(--outline-variant);
+      background: var(--surface-container-low);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+
+    .hotspot-chip:hover,
+    .hotspot-chip.is-active {
+      background: var(--primary-container);
+      border-color: var(--primary);
+      color: var(--on-primary-container);
+    }
+
+    .hotspot-detail {
+      padding: 12px 16px;
+      background: var(--primary-container);
+      border-top: 1px solid var(--primary-border);
+      font-size: 0.9rem;
+      color: var(--on-surface);
+    }
+
+    /* Stage Header */
+    .stage-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding-bottom: var(--space-md);
+      border-bottom: var(--warm-hairline);
+      margin-bottom: var(--space-xl);
+    }
+
+    /* Interactive Question Cards (BKOF Warmup, JCOT, ICOT) */
+    .question-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+      gap: var(--space-lg);
+    }
+
+    .q-card {
+      background: var(--surface-paper);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .q-label {
+      font-size: var(--label-size);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: var(--space-xs);
+      display: block;
+    }
+
+    .q-prompt {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin: 0 0 var(--space-md);
+      color: var(--on-surface);
+    }
+
+    .choice-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .choice-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 44px;
+      padding: 10px 14px;
+      text-align: left;
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+
+    .choice-btn:hover:not(:disabled) {
+      background: var(--primary-container);
+      border-color: var(--primary-border);
+    }
+
+    .choice-btn.is-selected {
+      background: var(--primary-container);
+      border-color: var(--primary);
+      box-shadow: inset 0 0 0 1px var(--primary);
+      font-weight: 600;
+    }
+
+    .choice-btn.is-correct {
+      background: var(--positive-container);
+      border-color: var(--positive);
+      color: var(--on-tertiary-container);
+      box-shadow: inset 0 0 0 1px var(--positive);
+    }
+
+    .choice-btn.is-wrong {
+      background: var(--error-container);
+      border-color: var(--error);
+      color: var(--on-error-container);
+      box-shadow: inset 0 0 0 1px var(--error);
+    }
+
+    .choice-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      flex-shrink: 0;
+      border-radius: var(--rounded-full);
+      background: var(--surface-paper);
+      border: 1px solid var(--outline-variant);
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .choice-btn.is-selected .choice-letter {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+
+    .choice-btn.is-correct .choice-letter {
+      background: var(--positive);
+      color: var(--on-primary);
+      border-color: var(--positive);
+    }
+
+    .choice-btn.is-wrong .choice-letter {
+      background: var(--error);
+      color: var(--on-error);
+      border-color: var(--error);
+    }
+
+    .feedback-box {
+      margin-top: var(--space-md);
+      padding: 12px 14px;
+      border-radius: var(--rounded);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      border: 1px solid transparent;
+    }
+
+    .feedback-box.is-positive {
+      background: var(--positive-container);
+      border-color: var(--tertiary-border);
+      color: var(--on-tertiary-container);
+    }
+
+    .feedback-box.is-warning {
+      background: var(--warning-container);
+      border-color: var(--warning-border);
+      color: var(--warning);
+    }
+
+    .feedback-box.is-error {
+      background: var(--error-container);
+      border-color: var(--error-border);
+      color: var(--on-error-container);
+    }
+
+    /* Form Inputs */
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: var(--space-md);
+    }
+
+    .field-label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--on-surface);
+    }
+
+    .text-input,
+    .textarea-input {
+      width: 100%;
+      padding: 10px 14px;
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      color: var(--on-surface);
+      transition: border-color var(--dur-micro) var(--ease-out), background-color var(--dur-micro) var(--ease-out);
+    }
+
+    .text-input:focus,
+    .textarea-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: var(--surface-paper);
+    }
+
+    .textarea-input {
+      min-height: 88px;
+      resize: vertical;
+    }
+
+    /* Vocabulary Matching Studio (Drag-and-Drop + Click-to-Pair) */
+    .vocab-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .word-bank {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      padding: var(--space-md);
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      min-height: 120px;
+    }
+
+    .vocab-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 14px;
+      background: var(--surface-paper);
+      border: 1px solid var(--outline);
+      border-radius: var(--rounded-full);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: grab;
+      user-select: none;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out);
+    }
+
+    .vocab-chip:hover {
+      background: var(--primary-container);
+      border-color: var(--primary);
+    }
+
+    .vocab-chip.is-selected {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .match-rows {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-sm);
+    }
+
+    .match-slot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      padding: 10px 12px;
+      min-height: 52px;
+      background: var(--surface-paper);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      cursor: pointer;
+      transition: border-color var(--dur-micro) var(--ease-out), background-color var(--dur-micro) var(--ease-out);
+    }
+
+    .match-slot.is-dragover {
+      background: var(--primary-container);
+      border-color: var(--primary);
+      border-style: dashed;
+    }
+
+    .match-slot.is-correct {
+      background: var(--positive-container);
+      border-color: var(--positive);
+    }
+
+    .match-slot.is-wrong {
+      background: var(--error-container);
+      border-color: var(--error);
+    }
+
+    .match-en {
+      font-weight: 700;
+      color: var(--on-surface);
+    }
+
+    .match-drop-zone {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--on-surface-variant);
+      padding: 4px 10px;
+      border-radius: var(--rounded-full);
+      background: var(--surface-container-low);
+      border: 1px dashed var(--outline);
+    }
+
+    .match-drop-zone.has-value {
+      border-style: solid;
+      border-color: var(--primary-border);
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+
+    /* Reading Strategy Stepper (READ -> FIND -> THINK -> ANSWER) */
+    .strategy-pipeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-md);
+      margin-block: var(--space-md);
+    }
+
+    .strategy-step-card {
+      text-align: left;
+      padding: var(--space-md);
+      background: var(--surface-paper);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      cursor: pointer;
+      transition: border-color var(--dur-micro) var(--ease-out), background-color var(--dur-micro) var(--ease-out);
+    }
+
+    .strategy-step-card:hover,
+    .strategy-step-card.is-active {
+      background: var(--primary-container);
+      border-color: var(--primary);
+    }
+
+    .strategy-step-num {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .strategy-step-name {
+      font-family: var(--font-headline);
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    /* Interactive Reading Passage */
+    .passage-split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .passage-card {
+      background: var(--surface-paper);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-xl);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .passage-title {
+      font-family: var(--font-headline);
+      font-weight: 700;
+      font-size: 1.75rem;
+      letter-spacing: 0.02em;
+      margin: 0 0 var(--space-md);
+      color: var(--on-surface);
+      text-transform: uppercase;
+    }
+
+    .passage-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xs);
+      margin-bottom: var(--space-md);
+      padding-bottom: var(--space-md);
+      border-bottom: var(--warm-hairline);
+    }
+
+    .filter-pill {
+      min-height: 36px;
+      padding: 6px 12px;
+      border-radius: var(--rounded-full);
+      border: 1px solid var(--outline-variant);
+      background: var(--surface-container-low);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+
+    .filter-pill:hover {
+      background: var(--primary-container);
+      border-color: var(--primary-border);
+    }
+
+    .filter-pill.is-active {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+
+    .passage-body {
+      font-size: 1.09375rem;
+      line-height: 1.8;
+      color: var(--on-surface);
+      max-width: 65ch;
+    }
+
+    .passage-para {
+      margin: 0 0 var(--space-md);
+      padding: 6px 10px;
+      border-radius: var(--rounded);
+      border-left: 3px solid transparent;
+      transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
+    }
+
+    /* Structure & Feature Highlight Modes */
+    .passage-body.mode-structure .para-ident {
+      background: var(--hl-ident-bg);
+      border-left-color: var(--hl-ident-border);
+    }
+
+    .passage-body.mode-structure .para-desc {
+      background: var(--hl-desc-bg);
+      border-left-color: var(--hl-desc-border);
+    }
+
+    .passage-body.mode-verbs .feat-verb {
+      background: var(--hl-verb-bg);
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .passage-body.mode-adjectives .feat-adj {
+      background: var(--hl-adj-bg);
+      color: var(--hl-adj-ink);
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .passage-body.mode-preps .feat-prep {
+      background: var(--hl-prep-bg);
+      color: var(--hl-prep-ink);
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .vocab-inline {
+      border-bottom: 1.5px dotted var(--primary);
+      cursor: pointer;
+      padding: 1px 2px;
+      border-radius: 3px;
+      transition: background-color var(--dur-micro) var(--ease-out);
+    }
+
+    .vocab-inline:hover,
+    .vocab-inline.is-active {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+
+    .evidence-span {
+      border-radius: 4px;
+      padding: 1px 3px;
+      transition: background-color var(--dur-short) var(--ease-out);
+    }
+
+    .evidence-span.is-lit {
+      background: var(--hl-evidence-bg);
+      box-shadow: 0 0 0 2px var(--secondary);
+    }
+
+    .legend-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+      font-size: 0.8125rem;
+    }
+
+    .legend-swatch {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: var(--rounded-full);
+      border: 1px solid var(--outline-variant);
+      background: var(--surface-container-low);
+    }
+
+    .swatch-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: var(--rounded-full);
+    }
+
+    /* Think-Aloud Stepper */
+    .thinkaloud-box {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-lg);
+    }
+
+    .thinkaloud-steps {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      margin-block: var(--space-md);
+    }
+
+    .ta-step {
+      padding: 12px 14px;
+      background: var(--surface-paper);
+      border: 1px solid var(--outline-variant);
+      border-left: 3px solid var(--outline);
+      border-radius: var(--rounded);
+      opacity: 0.48;
+      transition: opacity var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+
+    .ta-step.is-revealed {
+      opacity: 1;
+      border-left-color: var(--primary);
+    }
+
+    .ta-step.is-current {
+      opacity: 1;
+      background: var(--primary-container);
+      border-color: var(--primary-border);
+      border-left-color: var(--primary);
+    }
+
+    .ta-step-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    /* Sticky Side Passage on Desktop for JCOT & ICOT */
+    .sticky-column {
+      position: sticky;
+      top: 16px;
+    }
+
+    /* Bottom Sequential Page Footer */
+    .page-nav-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      margin-top: var(--space-2xl);
+      padding-top: var(--space-lg);
+      border-top: var(--warm-hairline);
+    }
+
+    /* Slide-over Differentiated Toolkit Drawer */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: var(--backdrop-scrim);
+      z-index: 40;
+      display: none;
+    }
+
+    .drawer-backdrop.is-open {
+      display: block;
+    }
+
+    .toolkit-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(560px, 100vw);
+      background: var(--background);
+      border-left: 1px solid var(--outline-variant);
+      box-shadow: var(--soft-shadow-raised);
+      z-index: 50;
+      display: none;
+      flex-direction: column;
+    }
+
+    .toolkit-drawer.is-open {
+      display: flex;
+    }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding: var(--space-lg);
+      background: var(--surface-container-low);
+      border-bottom: var(--warm-hairline);
+    }
+
+    .drawer-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xs);
+      padding: var(--space-sm) var(--space-lg);
+      background: var(--surface-container);
+      border-bottom: var(--warm-hairline);
+    }
+
+    .drawer-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: var(--space-lg);
+    }
+
+    .drawer-pane {
+      display: none;
+    }
+
+    .drawer-pane.is-active {
+      display: block;
+    }
+
+    /* Tables (Terracotta rules) */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+    }
+
+    .data-table th {
+      background: var(--surface-container);
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--on-surface-variant);
+      border-bottom: 1px solid var(--outline-variant);
+    }
+
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--outline-variant);
+      vertical-align: top;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Discussion Timer Box */
+    .discussion-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding: var(--space-md) var(--space-lg);
+      background: var(--secondary-container);
+      border: 1px solid var(--warning-border);
+      border-radius: var(--rounded-lg);
+      margin-bottom: var(--space-xl);
+    }
+
+    .timer-readout {
+      font-family: var(--font-headline);
+      font-weight: 700;
+      font-size: 1.75rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--on-surface);
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 900px) {
+      .hero-split,
+      .passage-split,
+      .vocab-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sticky-column {
+        position: static;
+      }
+
+      .stepper-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .strategy-pipeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .app-shell {
+        padding: var(--space-sm) var(--space-md) var(--space-xl);
+      }
+
+      .panel,
+      .passage-card {
+        padding: var(--space-md);
+      }
+
+      .stepper-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .strategy-pipeline {
+        grid-template-columns: 1fr;
+      }
+
+      .page-nav-footer {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .page-nav-footer .btn {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="app-shell">
+  <!-- Top Course Bar -->
+  <header class="course-topbar">
+    <div class="brand-cluster">
+      <span class="brand-kicker">Grade XII · Phase F · Descriptive Text · 90-Minute GBA Lesson</span>
+      <h1 class="brand-title">Discovering Indonesian <em>Heritage</em></h1>
+    </div>
+    <div class="topbar-actions">
+      <span class="progress-pill" id="overall-progress-pill" aria-live="polite">
+        <span class="progress-pill-dot" aria-hidden="true"></span>
+        <span id="overall-progress-text">0% Complete</span>
+      </span>
+      <button type="button" class="btn btn-secondary btn-sm" onclick="openToolkit('strategy')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        Learning Toolkit
+      </button>
+      <button type="button" class="btn btn-secondary btn-sm" id="reset-progress-btn" onclick="handleResetProgress(this)">
+        Reset
+      </button>
+    </div>
+  </header>
+
+  <!-- Step-by-Step Progress Indicator -->
+  <nav class="stepper-wrap" aria-label="Lesson stage navigation">
+    <div class="stepper-meta">
+      <span class="stepper-stage-label" id="stepper-stage-label">Introduction — Welcome &amp; Objectives</span>
+      <span class="stepper-time-label" id="stepper-time-label">Page 0 of 5 · Lesson Duration: 90 Minutes</span>
+    </div>
+    <div class="stepper-track-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="16" id="stepper-progressbar">
+      <div class="stepper-track-fill" id="stepper-track-fill" style="width: 16%;"></div>
+    </div>
+    <div class="stepper-nav">
+      <button type="button" class="step-btn is-active" data-page="0" onclick="goToPage(0)">
+        <span class="step-num">Intro</span>
+        <span class="step-name">Welcome</span>
+      </button>
+      <button type="button" class="step-btn" data-page="1" onclick="goToPage(1)">
+        <span class="step-num">Page 1 · 10m</span>
+        <span class="step-name">BKOF</span>
+      </button>
+      <button type="button" class="step-btn" data-page="2" onclick="goToPage(2)">
+        <span class="step-num">Page 2 · 15m</span>
+        <span class="step-name">MOT</span>
+      </button>
+      <button type="button" class="step-btn" data-page="3" onclick="goToPage(3)">
+        <span class="step-num">Page 3 · 15m</span>
+        <span class="step-name">JCOT</span>
+      </button>
+      <button type="button" class="step-btn" data-page="4" onclick="goToPage(4)">
+        <span class="step-num">Page 4 · 20m</span>
+        <span class="step-name">ICOT</span>
+      </button>
+      <button type="button" class="step-btn" data-page="5" onclick="goToPage(5)">
+        <span class="step-num">Page 5 · 15m</span>
+        <span class="step-name">Summary &amp; Report</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 0: WELCOME PAGE                                                  -->
+  <!-- ===================================================================== -->
+  <section class="lesson-page is-active" id="page-0" aria-labelledby="welcome-heading">
+    <div class="hero-split">
+      <div>
+        <span class="kicker-label">English Reading Comprehension · Senior High School</span>
+        <h2 class="display-title" id="welcome-heading">Discovering Indonesian <em>Heritage</em></h2>
+        <p class="lead-copy">
+          <strong>Exploring Descriptive Text Through Reading Strategies.</strong> In this 90-minute interactive lesson, you will explore iconic Central Javanese temples, master how descriptive texts are structured, and practice answering TKA-oriented reading comprehension questions backed by textual evidence.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+          <button type="button" class="btn btn-primary btn-lg" onclick="goToPage(1)">
+            Start Learning: Page 1 (BKOF)
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="openToolkit('strategy')">
+            View Reading Strategy Card
+          </button>
+        </div>
+      </div>
+
+      <!-- Detailed Architectural Illustration of Borobudur Temple -->
+      <figure class="landmark-frame" style="margin: 0;">
+        <svg viewBox="0 0 720 440" role="img" aria-label="Illustrated architectural view of Borobudur Temple at sunrise with stepped stone terraces, bell-shaped stupas, and volcanic mountains in Central Java">
+          <defs>
+            <linearGradient id="boroDawnSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e8cbb1"/>
+              <stop offset="55%" stop-color="#f4dec4"/>
+              <stop offset="100%" stop-color="#f9ecda"/>
+            </linearGradient>
+            <radialGradient id="boroSunGlow" cx="76%" cy="32%" r="36%">
+              <stop offset="0%" stop-color="#fff2d6" stop-opacity="0.95"/>
+              <stop offset="50%" stop-color="#f4dec4" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#f4dec4" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="boroStoneBody" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#85766a"/>
+              <stop offset="50%" stop-color="#63574e"/>
+              <stop offset="100%" stop-color="#453c36"/>
+            </linearGradient>
+            <linearGradient id="boroMist" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f7ede0" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#f7ede0" stop-opacity="0.88"/>
+            </linearGradient>
+          </defs>
+          <!-- Sky & Sun -->
+          <rect width="720" height="440" fill="url(#boroDawnSky)"/>
+          <rect width="720" height="440" fill="url(#boroSunGlow)"/>
+          <circle cx="548" cy="138" r="34" fill="#fff2d6" opacity="0.9"/>
+
+          <!-- Distant Merapi & Merbabu Volcano Silhouettes -->
+          <path d="M0 280 L110 218 L205 245 L335 162 L445 232 L575 182 L720 256 L720 440 L0 440 Z" fill="#cbb5a3"/>
+          <path d="M0 302 L140 254 L260 278 L420 220 L555 268 L720 236 L720 440 L0 440 Z" fill="#ae9684"/>
+          <rect x="0" y="235" width="720" height="110" fill="url(#boroMist)"/>
+
+          <!-- Borobudur Nine-Level Stepped Pyramid -->
+          <!-- Base Level 1 & 2 (Kamadhatu) -->
+          <rect x="85" y="348" width="550" height="30" rx="2" fill="#453c36"/>
+          <rect x="108" y="324" width="504" height="26" rx="2" fill="#524740"/>
+          <!-- Rupadhatu Square Terraced Galleries (Levels 3-6) -->
+          <rect x="136" y="300" width="448" height="25" rx="2" fill="#63574e"/>
+          <rect x="164" y="278" width="392" height="23" rx="2" fill="#6e6056"/>
+          <rect x="192" y="257" width="336" height="22" rx="2" fill="#77685d"/>
+          <rect x="220" y="238" width="280" height="20" rx="2" fill="#85766a"/>
+
+          <!-- Balustrade Niche Battlements & Sunlit Top Edges -->
+          <g fill="#453c36">
+            <rect x="144" y="294" width="12" height="7"/><rect x="172" y="294" width="12" height="7"/>
+            <rect x="200" y="294" width="12" height="7"/><rect x="228" y="294" width="12" height="7"/>
+            <rect x="480" y="294" width="12" height="7"/><rect x="508" y="294" width="12" height="7"/>
+            <rect x="536" y="294" width="12" height="7"/><rect x="564" y="294" width="12" height="7"/>
+            <rect x="174" y="272" width="10" height="7"/><rect x="202" y="272" width="10" height="7"/>
+            <rect x="508" y="272" width="10" height="7"/><rect x="536" y="272" width="10" height="7"/>
+            <rect x="204" y="252" width="10" height="6"/><rect x="232" y="252" width="10" height="6"/>
+            <rect x="478" y="252" width="10" height="6"/><rect x="506" y="252" width="10" height="6"/>
+          </g>
+
+          <!-- Central Grand Staircase Gateway (Kala-Makara Arches) -->
+          <polygon points="334,378 386,378 375,238 345,238" fill="#524740" stroke="#b59e88" stroke-width="1.5"/>
+          <rect x="348" y="340" width="24" height="38" fill="#322b26"/>
+          <rect x="350" y="302" width="20" height="26" fill="#322b26"/>
+          <rect x="352" y="266" width="16" height="24" fill="#322b26"/>
+          <path d="M342 342 L360 326 L378 342 Z" fill="#85766a"/>
+          <path d="M345 304 L360 290 L375 304 Z" fill="#85766a"/>
+
+          <!-- Arupadhatu Circular Terraces (Levels 7-9) -->
+          <ellipse cx="360" cy="238" rx="134" ry="12" fill="#85766a"/>
+          <ellipse cx="360" cy="222" rx="104" ry="10" fill="#77685d"/>
+          <ellipse cx="360" cy="206" rx="74" ry="8" fill="#85766a"/>
+
+          <!-- Bell-Shaped Perforated Stupas -->
+          <g fill="#524740" stroke="#b59e88" stroke-width="1">
+            <path d="M242 234 Q242 214 252 210 L252 204 L256 204 L256 210 Q266 214 266 234 Z"/>
+            <path d="M280 234 Q280 214 290 210 L290 204 L294 204 L294 210 Q304 214 304 234 Z"/>
+            <path d="M416 234 Q416 214 426 210 L426 204 L430 204 L430 210 Q440 214 440 234 Z"/>
+            <path d="M454 234 Q454 214 464 210 L464 204 L468 204 L468 210 Q478 214 478 234 Z"/>
+            <path d="M268 218 Q268 200 278 196 L278 190 L282 190 L282 196 Q292 200 292 218 Z"/>
+            <path d="M428 218 Q428 200 438 196 L438 190 L442 190 L442 196 Q452 200 452 218 Z"/>
+          </g>
+
+          <!-- Grand Central Main Stupa -->
+          <ellipse cx="360" cy="202" rx="46" ry="8" fill="#63574e"/>
+          <path d="M324 202 Q324 152 353 144 L353 114 L367 114 L367 144 Q396 152 396 202 Z" fill="url(#boroStoneBody)" stroke="#b59e88" stroke-width="1.5"/>
+          <rect x="357" y="98" width="6" height="18" fill="#b59e88"/>
+
+          <!-- Foreground Courtyard & Tropical Palms -->
+          <rect x="0" y="378" width="720" height="62" fill="#453c36"/>
+          <path d="M0 378 L720 378 L720 392 L0 392 Z" fill="#85766a" opacity="0.5"/>
+          <g fill="#344a3f">
+            <path d="M0 390 Q35 340 75 362 Q40 375 35 440 L0 440 Z"/>
+            <path d="M720 385 Q675 335 635 365 Q675 375 685 440 L720 440 Z"/>
+          </g>
+          <g fill="#4a6657" opacity="0.85">
+            <ellipse cx="48" cy="368" rx="34" ry="12" transform="rotate(-18 48 368)"/>
+            <ellipse cx="672" cy="365" rx="34" ry="12" transform="rotate(16 672 365)"/>
+          </g>
+        </svg>
+        <figcaption class="landmark-caption">
+          <span><strong>Borobudur Temple</strong> · Magelang, Central Java</span>
+          <span>9th Century Buddhist Monument · 9 Terraced Levels</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="ornament-rule">Lesson Learning Objectives</div>
+
+    <div class="arch-grid">
+      <div class="arch-card is-featured">
+        <div class="arch-card-label">Objective 01</div>
+        <div class="arch-card-figure">Structure</div>
+        <p class="arch-card-caption">Purpose &amp; Features</p>
+        <p class="arch-card-body">Identify the purpose, generic structure (Identification &amp; Description), and key details in descriptive texts.</p>
+      </div>
+      <div class="arch-card">
+        <div class="arch-card-label">Objective 02</div>
+        <div class="arch-card-figure">Explicit</div>
+        <p class="arch-card-caption">Textual Understanding</p>
+        <p class="arch-card-body">Locate directly stated facts and understand contextual meaning using structured reading strategies.</p>
+      </div>
+      <div class="arch-card">
+        <div class="arch-card-label">Objective 03</div>
+        <div class="arch-card-figure">Inference</div>
+        <p class="arch-card-caption">Implicit Clues</p>
+        <p class="arch-card-body">Connect explicit and implicit clues in a passage to draw accurate conclusions.</p>
+      </div>
+      <div class="arch-card">
+        <div class="arch-card-label">Objective 04</div>
+        <div class="arch-card-figure">Evidence</div>
+        <p class="arch-card-caption">TKA Justification</p>
+        <p class="arch-card-body">Answer TKA-oriented comprehension questions and justify choices with exact proof from the text.</p>
+      </div>
+    </div>
+
+    <div class="panel-sand">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+        <div>
+          <span class="kicker-label">90-Minute GBA Lesson Map</span>
+          <p style="margin: 0; color: var(--on-surface-variant);">
+            Follow the four Genre-Based Approach stages in order: <strong>BKOF</strong> (10m) → <strong>MOT</strong> (15m) → <strong>JCOT</strong> (15m) → <strong>ICOT</strong> (20m) → <strong>Summary &amp; Reflection</strong> (15m). Your answers and progress save automatically during your session.
+          </p>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="goToPage(1)">
+          Begin Lesson: BKOF
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 1: BKOF — BUILDING KNOWLEDGE OF THE FIELD (10 MINUTES)           -->
+  <!-- ===================================================================== -->
+  <section class="lesson-page" id="page-1" aria-labelledby="bkof-heading">
+    <div class="stage-header">
+      <div>
+        <span class="kicker-label">Stage 1 · Building Knowledge of the Field (BKOF)</span>
+        <h2 class="section-title" id="bkof-heading">Activate Prior Knowledge &amp; <em>Vocabulary</em></h2>
+      </div>
+      <span class="badge-emerald">Classroom Allocation: 10 Minutes</span>
+    </div>
+
+    <!-- A. Heritage Visual Exploration -->
+    <div class="panel">
+      <span class="kicker-label">Part A · Heritage Visual Exploration</span>
+      <h3 class="subhead-title">Observe the Monument &amp; Answer the Warm-up Questions</h3>
+      <p style="color: var(--on-surface-variant); margin-top: 0;">
+        Examine the monument below and click the architectural feature pins to preview key heritage terms (<em>stupa, relief, sanctuary, ancient, majestic</em>), then complete the four diagnostic warm-up prompts.
+      </p>
+
+      <div class="hero-split" style="margin-bottom: 0; align-items: start;">
+        <div class="landmark-frame">
+          <svg viewBox="0 0 640 380" role="img" aria-label="Borobudur Temple architectural study showing carved stone galleries, stupas, and volcanic backdrop">
+            <defs>
+              <linearGradient id="bkofSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#e8cbb1"/>
+                <stop offset="100%" stop-color="#f9ecda"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="380" fill="url(#bkofSky)"/>
+            <path d="M0 240 L120 190 L260 220 L410 155 L540 205 L640 175 L640 380 L0 380 Z" fill="#cbb5a3"/>
+            <path d="M0 270 L180 232 L340 250 L490 212 L640 244 L640 380 L0 380 Z" fill="#ae9684"/>
+            <!-- Pyramid -->
+            <rect x="70" y="300" width="500" height="28" fill="#453c36"/>
+            <rect x="105" y="274" width="430" height="26" fill="#524740"/>
+            <rect x="140" y="248" width="360" height="26" fill="#63574e"/>
+            <rect x="175" y="224" width="290" height="24" fill="#77685d"/>
+            <rect x="210" y="202" width="220" height="22" fill="#85766a"/>
+            <!-- Carved relief texture bands -->
+            <g stroke="#b59e88" stroke-width="1.2" opacity="0.65">
+              <line x1="115" y1="286" x2="290" y2="286"/>
+              <line x1="350" y1="286" x2="525" y2="286"/>
+              <line x1="150" y1="260" x2="295" y2="260"/>
+              <line x1="345" y1="260" x2="490" y2="260"/>
+            </g>
+            <!-- Central Stairs -->
+            <polygon points="298,328 342,328 334,202 306,202" fill="#524740" stroke="#b59e88" stroke-width="1"/>
+            <!-- Upper Stupas -->
+            <ellipse cx="320" cy="198" rx="95" ry="9" fill="#77685d"/>
+            <path d="M242 195 Q242 178 250 175 L250 170 L254 170 L254 175 Q262 178 262 195 Z" fill="#524740" stroke="#b59e88"/>
+            <path d="M378 195 Q378 178 386 175 L386 170 L390 170 L390 175 Q398 178 398 195 Z" fill="#524740" stroke="#b59e88"/>
+            <path d="M290 194 Q290 150 315 142 L315 114 L325 114 L325 142 Q350 150 350 194 Z" fill="#453c36" stroke="#b59e88" stroke-width="1.5"/>
+            <rect x="318" y="98" width="4" height="16" fill="#b59e88"/>
+            <!-- Courtyard -->
+            <rect x="0" y="328" width="640" height="52" fill="#453c36"/>
+          </svg>
+          <div class="hotspot-bar" role="group" aria-label="Architectural vocabulary pins">
+            <button type="button" class="hotspot-chip is-active" onclick="showHotspot('stupa', this)">1. Stupa</button>
+            <button type="button" class="hotspot-chip" onclick="showHotspot('relief', this)">2. Carved Relief</button>
+            <button type="button" class="hotspot-chip" onclick="showHotspot('sanctuary', this)">3. Ancient Sanctuary</button>
+            <button type="button" class="hotspot-chip" onclick="showHotspot('majestic', this)">4. Majestic Levels</button>
+          </div>
+          <div class="hotspot-detail" id="bkof-hotspot-detail">
+            <strong>Stupa:</strong> Bell-shaped volcanic stone domes on the upper circular terraces that house statues of Buddha.
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <!-- Warm-up Q1 -->
+          <div class="q-card" style="padding: 16px;">
+            <span class="q-label">Warm-up 1</span>
+            <p class="q-prompt" style="margin-bottom: 10px;">What place is this?</p>
+            <div class="choice-list" id="warmup-q1-choices">
+              <button type="button" class="choice-btn" onclick="answerWarmup(1, 'Borobudur Temple')">
+                <span class="choice-letter">A</span> Borobudur Temple
+              </button>
+              <button type="button" class="choice-btn" onclick="answerWarmup(1, 'Prambanan Temple')">
+                <span class="choice-letter">B</span> Prambanan Temple
+              </button>
+              <button type="button" class="choice-btn" onclick="answerWarmup(1, 'Tanah Lot Temple')">
+                <span class="choice-letter">C</span> Tanah Lot Temple
+              </button>
+            </div>
+            <div id="warmup-q1-fb"></div>
+          </div>
+
+          <!-- Warm-up Q2 -->
+          <div class="q-card" style="padding: 16px;">
+            <span class="q-label">Warm-up 2 · Personal Experience</span>
+            <p class="q-prompt" style="margin-bottom: 10px;">Have you ever seen Borobudur Temple?</p>
+            <div class="choice-list" id="warmup-q2-choices">
+              <button type="button" class="choice-btn" onclick="answerWarmup(2, 'visited')">
+                <span class="choice-letter">A</span> Yes, I have visited it in person.
+              </button>
+              <button type="button" class="choice-btn" onclick="answerWarmup(2, 'media')">
+                <span class="choice-letter">B</span> Only in photographs, books, or videos.
+              </button>
+              <button type="button" class="choice-btn" onclick="answerWarmup(2, 'notyet')">
+                <span class="choice-letter">C</span> Not yet, I would like to learn about it today.
+              </button>
+            </div>
+            <div id="warmup-q2-fb"></div>
+          </div>
+
+          <!-- Warm-up Q3 & Q4 compact -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 12px;">
+            <div class="q-card" style="padding: 16px;">
+              <span class="q-label">Warm-up 3</span>
+              <p class="q-prompt" style="margin-bottom: 10px;">Is Borobudur Temple in Indonesia?</p>
+              <div class="choice-list" id="warmup-q3-choices">
+                <button type="button" class="choice-btn" onclick="answerWarmup(3, 'yes')">Yes, in Central Java</button>
+                <button type="button" class="choice-btn" onclick="answerWarmup(3, 'no')">No, outside Indonesia</button>
+              </div>
+              <div id="warmup-q3-fb"></div>
+            </div>
+            <div class="q-card" style="padding: 16px;">
+              <span class="q-label">Warm-up 4</span>
+              <p class="q-prompt" style="margin-bottom: 10px;">Is Borobudur Temple a historical place?</p>
+              <div class="choice-list" id="warmup-q4-choices">
+                <button type="button" class="choice-btn" onclick="answerWarmup(4, 'yes')">Yes, built in the 9th century</button>
+                <button type="button" class="choice-btn" onclick="answerWarmup(4, 'no')">No, a modern complex</button>
+              </div>
+              <div id="warmup-q4-fb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B. Vocabulary Matching Activity -->
+    <div class="panel">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px;">
+        <div>
+          <span class="kicker-label">Part B · Essential Vocabulary Matching (11 Items)</span>
+          <h3 class="subhead-title" style="margin: 0;">Match English Vocabulary with Indonesian Meanings</h3>
+        </div>
+        <span class="badge-brass" id="vocab-score-badge">Score: 0 / 11</span>
+      </div>
+      <p style="color: var(--on-surface-variant); margin-top: 0;">
+        <strong>How to play:</strong> Drag an Indonesian meaning pill from the bank and drop it onto the matching English word — or click a meaning pill first, then click the English word slot. Click a filled slot to remove its card.
+      </p>
+
+      <div class="vocab-layout">
+        <div>
+          <span class="field-label" style="display: block; margin-bottom: 8px;">Indonesian Meaning Bank (Click or Drag)</span>
+          <div class="word-bank" id="vocab-bank"></div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px;">
+            <button type="button" class="btn btn-primary" onclick="checkVocabAnswers()">Check Answers</button>
+            <button type="button" class="btn btn-secondary" onclick="resetVocabActivity()">Try Again</button>
+          </div>
+          <div id="vocab-feedback-area" style="margin-top: 12px;"></div>
+        </div>
+
+        <div>
+          <span class="field-label" style="display: block; margin-bottom: 8px;">English Words (11 Core Terms)</span>
+          <div class="match-rows" id="vocab-slots"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C. Introduction to Reading Strategies -->
+    <div class="panel-sand">
+      <span class="kicker-label">Part C · Explicit Reading Strategy Instruction</span>
+      <h3 class="subhead-title">The Four-Step Reading Strategy: READ → FIND → THINK → ANSWER</h3>
+      <p style="color: var(--on-surface-variant); margin-top: 0;">
+        Click each step below to see how good readers tackle descriptive texts and TKA questions without guessing.
+      </p>
+
+      <div class="strategy-pipeline" role="tablist" aria-label="Reading strategy steps">
+        <button type="button" class="strategy-step-card is-active" onclick="selectStrategyStep(0, this)">
+          <div class="strategy-step-num">Step 01</div>
+          <div class="strategy-step-name">READ</div>
+          <div style="font-size: 0.875rem; color: var(--on-surface-variant);">Read the question carefully and understand what it asks.</div>
+        </button>
+        <button type="button" class="strategy-step-card" onclick="selectStrategyStep(1, this)">
+          <div class="strategy-step-num">Step 02</div>
+          <div class="strategy-step-name">FIND</div>
+          <div style="font-size: 0.875rem; color: var(--on-surface-variant);">Locate relevant keywords and sentences in the text.</div>
+        </button>
+        <button type="button" class="strategy-step-card" onclick="selectStrategyStep(2, this)">
+          <div class="strategy-step-num">Step 03</div>
+          <div class="strategy-step-name">THINK</div>
+          <div style="font-size: 0.875rem; color: var(--on-surface-variant);">Analyze the information and check the evidence.</div>
+        </button>
+        <button type="button" class="strategy-step-card" onclick="selectStrategyStep(3, this)">
+          <div class="strategy-step-num">Step 04</div>
+          <div class="strategy-step-name">ANSWER</div>
+          <div style="font-size: 0.875rem; color: var(--on-surface-variant);">Choose the best answer supported by the text.</div>
+        </button>
+      </div>
+
+      <div class="q-card" id="strategy-step-detail" style="margin-bottom: 20px;">
+        <strong>Step 1 — READ:</strong> Before scanning the whole passage, identify the question word (<em>Where, What, Why, Which statement</em>) and underline the main topic keyword.
+      </div>
+
+      <h4 class="subhead-title" style="font-size: 1.2rem;">Three TKA Reading Comprehension Skills You Will Master</h4>
+      <div class="arch-grid" style="margin-bottom: 0;">
+        <div class="arch-card">
+          <div class="arch-card-label">Skill 01</div>
+          <div class="arch-card-figure" style="font-size: 1.45rem;">Textual Understanding</div>
+          <p class="arch-card-caption">Explicit Information</p>
+          <p class="arch-card-body">Finding facts stated directly in a sentence. Example: <em>"Where is Borobudur Temple located?"</em></p>
+        </div>
+        <div class="arch-card is-featured">
+          <div class="arch-card-label">Skill 02</div>
+          <div class="arch-card-figure" style="font-size: 1.45rem;">Inferential Understanding</div>
+          <p class="arch-card-caption">Connecting Clues</p>
+          <p class="arch-card-body">Drawing a logical conclusion from multiple clues. Example: <em>"What can we infer about its importance?"</em></p>
+        </div>
+        <div class="arch-card">
+          <div class="arch-card-label">Skill 03</div>
+          <div class="arch-card-figure" style="font-size: 1.45rem;">Evaluating Evidence</div>
+          <p class="arch-card-caption">Text-Supported Claims</p>
+          <p class="arch-card-body">Checking whether a statement is proven by the passage, not personal opinion.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav-footer">
+      <button type="button" class="btn btn-secondary" onclick="goToPage(0)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        Back to Welcome
+      </button>
+      <button type="button" class="btn btn-primary btn-lg" onclick="goToPage(2)">
+        Continue to Page 2: Modelling (MOT)
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 2: MOT — MODELLING OF THE TEXT (15 MINUTES)                      -->
+  <!-- ===================================================================== -->
+  <section class="lesson-page" id="page-2" aria-labelledby="mot-heading">
+    <div class="stage-header">
+      <div>
+        <span class="kicker-label">Stage 2 · Modelling of the Text (MOT)</span>
+        <h2 class="section-title" id="mot-heading">Anatomy of Descriptive Text &amp; <em>Think-Aloud</em></h2>
+      </div>
+      <span class="badge-emerald">Classroom Allocation: 15 Minutes</span>
+    </div>
+
+    <!-- A. Descriptive Text Introduction -->
+    <div class="panel">
+      <span class="kicker-label">Part A · Descriptive Text Framework</span>
+      <h3 class="subhead-title">What Makes a Descriptive Text?</h3>
+      <p style="margin-top: 0; max-width: 65ch;">
+        <strong>Definition:</strong> A descriptive text is a text that describes a specific person, place, animal, or thing. Its communicative purpose is to give the reader a clear, vivid picture of a particular subject.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; margin-top: 16px;">
+        <div class="panel-sand" style="margin-bottom: 0; border-left: 4px solid var(--primary);">
+          <span class="badge-terracotta" style="margin-bottom: 8px;">Generic Structure</span>
+          <p style="margin: 0 0 8px;"><strong>1. Identification:</strong> This part introduces the object that is being described (what it is and where it is located).</p>
+          <p style="margin: 0;"><strong>2. Description:</strong> This part provides details about the object's characteristics, features, qualities, and other information.</p>
+        </div>
+
+        <div class="panel-sand" style="margin-bottom: 0; border-left: 4px solid var(--tertiary);">
+          <span class="badge-emerald" style="margin-bottom: 8px;">Language Features</span>
+          <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+            <li><strong>Simple Present Tense &amp; Passive Voice:</strong> <em>"The temple has several levels."</em> / <em>"Its walls are covered with detailed carvings."</em></li>
+            <li><strong>Specific Nouns &amp; Spatial Prepositions:</strong> <em>"Borobudur Temple is near Magelang."</em> / <em>"along the terraces"</em></li>
+            <li><strong>Adjectives:</strong> <em>ancient, historical, grand, impressive, detailed, valuable</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- B & C. Interactive Model Text: Borobudur Temple -->
+    <div class="passage-split" style="margin-bottom: 32px;">
+      <div class="passage-card">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px;">
+          <span class="kicker-label" style="margin: 0;">Part B &amp; C · Interactive Model Passage</span>
+          <span class="badge-brass" id="mot-reading-badge">Explore Highlights</span>
+        </div>
+        <h3 class="passage-title">Borobudur Temple</h3>
+
+        <div class="passage-toolbar" role="group" aria-label="Text highlighting controls">
+          <button type="button" class="filter-pill is-active" onclick="setMotHighlight('structure', this)">Structure: Identification vs Description</button>
+          <button type="button" class="filter-pill" onclick="setMotHighlight('verbs', this)">Present &amp; Passive Verbs</button>
+          <button type="button" class="filter-pill" onclick="setMotHighlight('adjectives', this)">Adjectives</button>
+          <button type="button" class="filter-pill" onclick="setMotHighlight('preps', this)">Spatial Prepositions</button>
+          <button type="button" class="filter-pill" onclick="setMotHighlight('none', this)">Plain Reading</button>
+        </div>
+
+        <div class="passage-body mode-structure" id="mot-passage-body">
+          <p class="passage-para para-ident" id="mot-p1">
+            <span class="evidence-span" id="mot-ev-loc"><span class="feat-noun">Borobudur Temple</span> <span class="feat-verb">is</span> an <span class="vocab-inline feat-adj" onclick="revealVocab('ancient')">ancient</span> <span class="feat-adj">Buddhist</span> monument <span class="vocab-inline feat-verb" onclick="revealVocab('located')">located</span> <span class="feat-prep">in Central Java, Indonesia</span>.</span>
+            Standing <span class="feat-prep">near the town of Magelang</span>, it <span class="feat-verb">was built</span> <span class="feat-prep">in the ninth century</span> and <span class="feat-verb">is regarded</span> as the <span class="feat-adj">largest</span> <span class="feat-adj">Buddhist</span> temple <span class="feat-prep">in the world</span>.
+            Every year, many <span class="vocab-inline" onclick="revealVocab('visitors')">visitors</span> <span class="feat-verb">travel</span> there to see it.
+          </p>
+          <p class="passage-para para-desc" id="mot-p2">
+            <span class="evidence-span" id="mot-ev-arch">The monument <span class="feat-verb">is made</span> of stone and <span class="feat-verb">has</span> nine <span class="vocab-inline" onclick="revealVocab('levels')">levels</span> that <span class="feat-verb">rise</span> like a <span class="feat-adj">giant</span> pyramid.</span>
+            <span class="evidence-span" id="mot-ev-carve">Its walls <span class="feat-verb">are covered</span> with <span class="feat-adj">detailed</span> <span class="vocab-inline" onclick="revealVocab('carvings')">carvings</span>, and hundreds of <span class="vocab-inline" onclick="revealVocab('statues')">statues</span> of Buddha <span class="feat-verb">sit</span> <span class="feat-prep">along the terraces</span>.</span>
+            Visitors <span class="feat-verb">are allowed</span> to walk <span class="feat-prep">around each level</span> and admire the <span class="vocab-inline feat-adj" onclick="revealVocab('impressive')">impressive</span> architecture.
+            <span class="evidence-span" id="mot-ev-imp">As a <span class="feat-adj">valuable</span> <span class="vocab-inline feat-adj" onclick="revealVocab('historical')">historical</span> and <span class="vocab-inline feat-adj" onclick="revealVocab('cultural')">cultural</span> <span class="vocab-inline" onclick="revealVocab('heritage')">heritage</span> site, Borobudur <span class="feat-verb">must be preserved</span> so that <span class="feat-adj">future</span> generations can still enjoy it.</span>
+          </p>
+        </div>
+
+        <div class="legend-row" id="mot-legend">
+          <span class="legend-swatch"><span class="swatch-dot" style="background: var(--hl-ident-border);"></span> Identification (Para 1)</span>
+          <span class="legend-swatch"><span class="swatch-dot" style="background: var(--hl-desc-border);"></span> Description (Para 2)</span>
+          <span class="legend-swatch"><span class="swatch-dot" style="background: var(--primary);"></span> Dotted words: click for meaning</span>
+        </div>
+
+        <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="toggleMotStructureNote()">
+            Reveal Text Structure Explanation
+          </button>
+          <button type="button" class="btn btn-emerald btn-sm" id="mot-confirm-btn" onclick="confirmMotReading()">
+            Mark Passage Analyzed
+          </button>
+        </div>
+
+        <div id="mot-structure-note" class="feedback-box is-positive" style="display: none;">
+          <strong>Text Structure Breakdown:</strong><br>
+          <strong>Paragraph 1 (Identification):</strong> Introduces Borobudur Temple, identifies it as an ancient Buddhist monument in Central Java near Magelang, mentions when it was built (9th century), and notes its fame.<br>
+          <strong>Paragraph 2 (Description):</strong> Describes physical features (stone material, nine pyramid-like levels, detailed carvings, Buddha statues along terraces) and explains why this historical and cultural heritage must be preserved.
+        </div>
+      </div>
+
+      <!-- Right Column: Vocabulary Inspector + Strategy Examples + Teacher Think-Aloud -->
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="q-card">
+          <span class="kicker-label">Interactive Vocabulary Card</span>
+          <h4 class="subhead-title" style="margin-bottom: 6px;">Click Any Dotted Word in the Passage</h4>
+          <div id="mot-vocab-inspector" class="panel-sand" style="margin-bottom: 0; padding: 14px;">
+            <strong>Tap a highlighted word</strong> (such as <em>ancient, located, carvings, statues, impressive, heritage, preserved</em>) to see its Indonesian meaning and grammatical role right here.
+          </div>
+        </div>
+
+        <!-- E. Teacher Think-Aloud Demonstration -->
+        <div class="thinkaloud-box">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px;">
+            <span class="kicker-label" style="margin: 0;">Part E · Teacher Think-Aloud Demonstration</span>
+            <span class="badge-terracotta" id="ta-step-counter">Step 1 of 5</span>
+          </div>
+          <h4 class="subhead-title" style="margin-top: 6px;">How an Expert Solves a TKA Question</h4>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;" role="group" aria-label="Select think-aloud demonstration skill">
+            <button type="button" class="filter-pill is-active" onclick="selectThinkAloud(0, this)">1. Textual</button>
+            <button type="button" class="filter-pill" onclick="selectThinkAloud(1, this)">2. Inferential</button>
+            <button type="button" class="filter-pill" onclick="selectThinkAloud(2, this)">3. Evaluating Evidence</button>
+          </div>
+
+          <div class="thinkaloud-steps" id="thinkaloud-steps-container"></div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <button type="button" class="btn btn-secondary btn-sm" onclick="prevThinkAloudStep()">Previous Step</button>
+            <button type="button" class="btn btn-primary btn-sm" onclick="nextThinkAloudStep()">Next Reasoning Step →</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="resetThinkAloudStep()">Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- D. Reading Comprehension Strategies Summary -->
+    <div class="panel-sand">
+      <span class="kicker-label">Part D · Three TKA Reading Comprehension Strategies</span>
+      <div class="arch-grid" style="margin-bottom: 0;">
+        <div class="arch-card" style="text-align: left;">
+          <div class="arch-card-label">Strategy 1 · Textual</div>
+          <div class="arch-card-figure" style="font-size: 1.35rem;">Spot → Locate → Pick</div>
+          <p class="arch-card-body">
+            Find facts stated directly in the text.<br>
+            <strong>Example:</strong> <em>Where is Borobudur Temple located?</em> Search for place keywords (<em>located, Central Java, Magelang</em>).
+          </p>
+        </div>
+        <div class="arch-card is-featured" style="text-align: left;">
+          <div class="arch-card-label">Strategy 2 · Inferential</div>
+          <div class="arch-card-figure" style="font-size: 1.35rem;">Clues → Link → Conclude</div>
+          <p class="arch-card-body">
+            Connect clues across sentences.<br>
+            <strong>Example:</strong> <em>What can we infer about its importance?</em> Link historical age, cultural heritage, and preservation.
+          </p>
+        </div>
+        <div class="arch-card" style="text-align: left;">
+          <div class="arch-card-label">Strategy 3 · Evidence</div>
+          <div class="arch-card-figure" style="font-size: 1.35rem;">Read → Check → Decide</div>
+          <p class="arch-card-body">
+            Verify each option against exact sentences.<br>
+            <strong>Example:</strong> <em>Which statement is best supported?</em> Reject opinions; pick only what the text proves.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav-footer">
+      <button type="button" class="btn btn-secondary" onclick="goToPage(1)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        Back to Page 1: BKOF
+      </button>
+      <button type="button" class="btn btn-primary btn-lg" onclick="goToPage(3)">
+        Continue to Page 3: Joint Practice (JCOT)
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 3: JCOT — JOINT CONSTRUCTION OF THE TEXT (15 MINUTES)            -->
+  <!-- ===================================================================== -->
+  <section class="lesson-page" id="page-3" aria-labelledby="jcot-heading">
+    <div class="stage-header">
+      <div>
+        <span class="kicker-label">Stage 3 · Joint Construction of the Text (JCOT)</span>
+        <h2 class="section-title" id="jcot-heading">Collaborative Practice &amp; <em>Evidence Finding</em></h2>
+      </div>
+      <span class="badge-emerald">Classroom Allocation: 15 Minutes</span>
+    </div>
+
+    <!-- Discussion Mode Banner -->
+    <div class="discussion-banner">
+      <div>
+        <strong style="display: block; font-size: 1rem;">Class Discussion Mode Active</strong>
+        <span style="font-size: 0.9rem; color: var(--on-surface-variant);">
+          Discuss all 6 questions with your partner or group first. Use the sentence frame: <em>"My answer is … because the text says …"</em> The official answer key stays locked until you click <strong>Check Collaborative Answers</strong>.
+        </span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span class="timer-readout" id="jcot-timer-display">03:00</span>
+        <button type="button" class="btn btn-secondary btn-sm" id="jcot-timer-btn" onclick="toggleJcotTimer()">Start Discussion Timer</button>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="resetJcotTimer()">Reset</button>
+      </div>
+    </div>
+
+    <div class="passage-split">
+      <!-- Left Sticky Passage: Borobudur Temple -->
+      <div class="sticky-column">
+        <div class="passage-card">
+          <span class="kicker-label">Reference Text · Borobudur Temple</span>
+          <h3 class="passage-title">Borobudur Temple</h3>
+          <div class="passage-body" id="jcot-passage-body">
+            <p class="passage-para">
+              <span class="evidence-span" id="jcot-ev-1">Borobudur Temple is an ancient Buddhist monument located in Central Java, Indonesia. Standing near the town of Magelang,</span>
+              <span class="evidence-span" id="jcot-ev-2">it was built in the ninth century and is regarded as the largest Buddhist temple in the world.</span>
+              Every year, many visitors travel there to see it.
+            </p>
+            <p class="passage-para">
+              The monument is made of stone and has nine levels that rise like a giant pyramid.
+              <span class="evidence-span" id="jcot-ev-6">Its walls are covered with detailed carvings, and hundreds of statues of Buddha sit along the terraces.</span>
+              <span class="evidence-span" id="jcot-ev-4">Visitors are allowed to walk around each level and admire the impressive architecture.</span>
+              <span class="evidence-span" id="jcot-ev-5">As a valuable historical and cultural heritage site, Borobudur must be preserved so that future generations can still enjoy it.</span>
+            </p>
+          </div>
+          <div id="jcot-evidence-status" class="feedback-box is-warning" style="margin-top: 12px;">
+            Submit your group answers on the right to unlock the official answer key and highlight exact textual evidence here.
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: 6 Official Collaborative Questions -->
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <!-- A. Textual Understanding -->
+        <div class="q-card">
+          <span class="badge-terracotta" style="margin-bottom: 8px;">A. Textual Understanding</span>
+          <div class="field-group">
+            <label class="field-label" for="jcot-q1">Question 1: Where is Borobudur Temple located?</label>
+            <input type="text" class="text-input" id="jcot-q1" placeholder="Type location &amp; evidence from paragraph 1..." oninput="saveJcotInput(1, this.value)">
+          </div>
+          <div id="jcot-q1-key"></div>
+
+          <div class="field-group" style="margin-top: 14px; margin-bottom: 0;">
+            <label class="field-label" for="jcot-q2">Question 2: What is Borobudur Temple famous for?</label>
+            <input type="text" class="text-input" id="jcot-q2" placeholder="Type what makes it famous according to paragraph 1..." oninput="saveJcotInput(2, this.value)">
+          </div>
+          <div id="jcot-q2-key"></div>
+        </div>
+
+        <!-- B. Inferential Understanding -->
+        <div class="q-card">
+          <span class="badge-brass" style="margin-bottom: 8px;">B. Inferential Understanding</span>
+          <div class="field-group">
+            <label class="field-label" for="jcot-q3">Question 3: What can we infer about the importance of Borobudur Temple for Indonesia?</label>
+            <textarea class="textarea-input" id="jcot-q3" placeholder="Link clues from the text (My answer is ... because the text says ...)" oninput="saveJcotInput(3, this.value)"></textarea>
+          </div>
+          <div id="jcot-q3-key"></div>
+
+          <div class="field-group" style="margin-top: 14px; margin-bottom: 0;">
+            <label class="field-label" for="jcot-q4">Question 4: Why do you think many people visit Borobudur Temple?</label>
+            <textarea class="textarea-input" id="jcot-q4" placeholder="Combine architectural &amp; cultural clues from paragraph 2..." oninput="saveJcotInput(4, this.value)"></textarea>
+          </div>
+          <div id="jcot-q4-key"></div>
+        </div>
+
+        <!-- C. Evaluating Information Based on Evidence -->
+        <div class="q-card">
+          <span class="badge-emerald" style="margin-bottom: 8px;">C. Evaluating Information Based on Evidence</span>
+
+          <div style="margin-bottom: 18px;">
+            <p class="q-prompt">Question 5: Which statement is best supported by the text?</p>
+            <div class="choice-list" id="jcot-q5-choices">
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(5, 'A')"><span class="choice-letter">A</span> Borobudur Temple is an important part of Indonesia's cultural heritage.</button>
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(5, 'B')"><span class="choice-letter">B</span> Borobudur Temple is a modern building.</button>
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(5, 'C')"><span class="choice-letter">C</span> Borobudur Temple has no historical value.</button>
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(5, 'D')"><span class="choice-letter">D</span> Borobudur Temple is only used for shopping.</button>
+            </div>
+            <div id="jcot-q5-key"></div>
+          </div>
+
+          <div>
+            <p class="q-prompt">Question 6: Which statement is supported by the information in the text?</p>
+            <div class="choice-list" id="jcot-q6-choices">
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(6, 'A')"><span class="choice-letter">A</span> Visitors cannot walk around Borobudur Temple.</button>
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(6, 'B')"><span class="choice-letter">B</span> Borobudur Temple has stone carvings and statues.</button>
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(6, 'C')"><span class="choice-letter">C</span> Borobudur Temple is located near Yogyakarta.</button>
+              <button type="button" class="choice-btn" onclick="selectJcotMcq(6, 'D')"><span class="choice-letter">D</span> Borobudur Temple should not be preserved.</button>
+            </div>
+            <div id="jcot-q6-key"></div>
+          </div>
+        </div>
+
+        <!-- Submit & Score Summary -->
+        <div class="panel-sand" style="margin-bottom: 0;">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;">
+            <div>
+              <strong id="jcot-score-summary">Ready to Check Collaborative Work</strong>
+              <div style="font-size: 0.875rem; color: var(--on-surface-variant);">Answer key and evidence highlights appear only after submission.</div>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="btn btn-primary" onclick="submitJcotAnswers()">Check Collaborative Answers</button>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="resetJcotActivity()">Try Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ornament-rule">Collaborative Bridge to Next Monument</div>
+
+    <!-- Guided Preview on Prambanan Temple -->
+    <div class="panel">
+      <div class="hero-split" style="margin-bottom: 0;">
+        <figure class="landmark-frame" style="margin: 0;">
+          <svg viewBox="0 0 640 340" role="img" aria-label="Illustrated architectural view of Prambanan Hindu temple complex with three tall pointed spires">
+            <defs>
+              <linearGradient id="pramPreviewSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#d9b694"/>
+                <stop offset="60%" stop-color="#ecd0ae"/>
+                <stop offset="100%" stop-color="#f7e6cf"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="340" fill="url(#pramPreviewSky)"/>
+            <circle cx="145" cy="105" r="30" fill="#fff2d6" opacity="0.88"/>
+            <path d="M0 245 L140 205 L280 232 L460 198 L640 230 L640 340 L0 340 Z" fill="#cbb5a3"/>
+            <!-- Left Temple (Brahma) -->
+            <g fill="#524740" stroke="#b59e88" stroke-width="1">
+              <rect x="130" y="218" width="90" height="68"/>
+              <polygon points="140,218 210,218 198,175 152,175"/>
+              <polygon points="154,175 196,175 188,136 162,136"/>
+              <polygon points="165,136 185,136 175,92"/>
+              <rect x="164" y="242" width="22" height="44" fill="#322b26"/>
+            </g>
+            <!-- Center Tallest Temple (Shiva Mahadeva) -->
+            <g fill="#453c36" stroke="#b59e88" stroke-width="1.2">
+              <rect x="260" y="198" width="120" height="88"/>
+              <polygon points="270,198 370,198 358,150 282,150"/>
+              <polygon points="284,150 356,150 346,105 294,105"/>
+              <polygon points="298,105 342,105 332,68 308,68"/>
+              <polygon points="310,68 330,68 320,26"/>
+              <rect x="305" y="226" width="30" height="60" fill="#2c2521"/>
+            </g>
+            <!-- Right Temple (Vishnu) -->
+            <g fill="#63574e" stroke="#b59e88" stroke-width="1">
+              <rect x="420" y="218" width="90" height="68"/>
+              <polygon points="430,218 500,218 488,175 442,175"/>
+              <polygon points="444,175 486,175 478,136 452,136"/>
+              <polygon points="455,136 475,136 465,92"/>
+              <rect x="454" y="242" width="22" height="44" fill="#322b26"/>
+            </g>
+            <!-- Courtyard Platform -->
+            <rect x="65" y="286" width="510" height="16" fill="#63574e"/>
+            <rect x="0" y="302" width="640" height="38" fill="#453c36"/>
+          </svg>
+          <figcaption class="landmark-caption">
+            <span><strong>Prambanan Temple</strong> · Near Yogyakarta, Central Java</span>
+            <span>Three Main Hindu Temples · Tall Pointed Spires</span>
+          </figcaption>
+        </figure>
+
+        <div>
+          <span class="kicker-label">Pre-Reading Collaborative Prompt</span>
+          <h3 class="subhead-title">Previewing Prambanan Temple Before Independent Work</h3>
+          <p style="color: var(--on-surface-variant); margin-top: 0;">
+            Before moving to the independent test on Page 4, discuss with your partner: What visual differences do you notice between Borobudur's stepped pyramid and Prambanan's tall pointed spires?
+          </p>
+          <div class="q-card" style="padding: 16px;">
+            <span class="q-label">Quick Prediction Check</span>
+            <p class="q-prompt" style="margin-bottom: 10px;">Which descriptive phrase best fits the visual silhouette of Prambanan Temple?</p>
+            <div class="choice-list" id="jcot-bridge-choices">
+              <button type="button" class="choice-btn" onclick="answerBridgePrompt('tall')">
+                <span class="choice-letter">A</span> Three tall, pointed Hindu temple spires with detailed stone carvings
+              </button>
+              <button type="button" class="choice-btn" onclick="answerBridgePrompt('modern')">
+                <span class="choice-letter">B</span> A modern glass shopping complex near the beach
+              </button>
+            </div>
+            <div id="jcot-bridge-fb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav-footer">
+      <button type="button" class="btn btn-secondary" onclick="goToPage(2)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        Back to Page 2: MOT
+      </button>
+      <button type="button" class="btn btn-primary btn-lg" onclick="goToPage(4)">
+        Continue to Page 4: Independent Test (ICOT)
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 4: ICOT — INDEPENDENT CONSTRUCTION OF THE TEXT (20 MINUTES)      -->
+  <!-- ===================================================================== -->
+  <section class="lesson-page" id="page-4" aria-labelledby="icot-heading">
+    <div class="stage-header">
+      <div>
+        <span class="kicker-label">Stage 4 · Independent Construction of the Text (ICOT)</span>
+        <h2 class="section-title" id="icot-heading">Independent TKA Reading <em>Assessment</em></h2>
+      </div>
+      <span class="badge-emerald">Classroom Allocation: 20 Minutes</span>
+    </div>
+
+    <div class="panel-sand" style="margin-bottom: 24px;">
+      <strong>Instruction:</strong> Read the text about Prambanan Temple carefully. Answer the three TKA questions on your own, using information and evidence from the text. Apply <strong>READ → FIND → THINK → ANSWER</strong>.
+    </div>
+
+    <div class="passage-split">
+      <!-- Left Sticky Passage: Prambanan Temple -->
+      <div class="sticky-column">
+        <div class="passage-card" style="padding: 20px;">
+          <figure class="landmark-frame" style="margin: 0 0 18px;">
+            <svg viewBox="0 0 600 240" role="img" aria-label="Prambanan Temple complex in golden afternoon light">
+              <defs>
+                <linearGradient id="icotPramSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#d9b694"/>
+                  <stop offset="100%" stop-color="#f7e6cf"/>
+                </linearGradient>
+              </defs>
+              <rect width="600" height="240" fill="url(#icotPramSky)"/>
+              <path d="M0 175 L150 148 L320 168 L480 142 L600 162 L600 240 L0 240 Z" fill="#cbb5a3"/>
+              <!-- Trimurti Spires -->
+              <g fill="#524740" stroke="#b59e88" stroke-width="1">
+                <rect x="135" y="148" width="72" height="58"/>
+                <polygon points="145,148 197,148 187,114 155,114"/>
+                <polygon points="158,114 184,114 171,62"/>
+                <rect x="245" y="130" width="110" height="76" fill="#453c36"/>
+                <polygon points="256,130 344,130 332,92 268,92" fill="#453c36"/>
+                <polygon points="272,92 328,92 316,56 284,56" fill="#453c36"/>
+                <polygon points="288,56 312,56 300,18" fill="#453c36"/>
+                <rect x="393" y="148" width="72" height="58"/>
+                <polygon points="403,148 455,148 445,114 413,114"/>
+                <polygon points="416,114 442,114 429,62"/>
+              </g>
+              <rect x="0" y="206" width="600" height="34" fill="#453c36"/>
+            </svg>
+          </figure>
+
+          <span class="kicker-label">Independent Reading Text</span>
+          <h3 class="passage-title">Prambanan Temple</h3>
+          <div class="passage-body" id="icot-passage-body">
+            <p class="passage-para">
+              <span class="evidence-span" id="icot-ev-2a">Prambanan Temple is one of the biggest Hindu temple complexes in Indonesia.</span>
+              <span class="evidence-span" id="icot-ev-1">It stands in Central Java, near Yogyakarta.</span>
+              The temple is famous for its tall and beautiful buildings, and it is also known for its detailed stone carvings.
+            </p>
+            <p class="passage-para">
+              The complex has three main temples dedicated to Hindu gods.
+              <span class="evidence-span" id="icot-ev-2b">Many visitors come to enjoy its impressive architecture and to learn about Indonesian history and culture.</span>
+              <span class="evidence-span" id="icot-ev-3">Prambanan Temple is a significant part of Indonesia's cultural heritage. For this reason, it should be protected and preserved for future generations.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Single-Question Navigator & Assessment -->
+      <div>
+        <div class="panel" style="margin-bottom: 20px;">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px;">
+            <span class="kicker-label" style="margin: 0;">Independent Test · One Question at a Time</span>
+            <div style="display: flex; gap: 6px;" role="tablist" aria-label="Test questions">
+              <button type="button" class="filter-pill is-active" id="icot-nav-0" onclick="goToIcotQuestion(0)">Q1</button>
+              <button type="button" class="filter-pill" id="icot-nav-1" onclick="goToIcotQuestion(1)">Q2</button>
+              <button type="button" class="filter-pill" id="icot-nav-2" onclick="goToIcotQuestion(2)">Q3</button>
+            </div>
+          </div>
+
+          <div id="icot-question-stage"></div>
+
+          <div class="field-group" style="margin-top: 16px;">
+            <label class="field-label" for="icot-reason-input">Explain Your Answer (Optional Evidence Check: "My answer is … because the text says …")</label>
+            <input type="text" class="text-input" id="icot-reason-input" placeholder="My answer is ... because the text says ..." oninput="saveIcotReason(this.value)">
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-top: 16px;">
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="btn btn-secondary btn-sm" id="icot-prev-q" onclick="prevIcotQuestion()">← Previous Question</button>
+              <button type="button" class="btn btn-secondary btn-sm" id="icot-next-q" onclick="nextIcotQuestion()">Next Question →</button>
+            </div>
+            <button type="button" class="btn btn-primary" id="icot-submit-btn" onclick="submitIcotTest()">Submit Answers</button>
+          </div>
+          <div id="icot-validation-msg"></div>
+        </div>
+
+        <!-- Final ICOT Result & Rubric Card (revealed after submission) -->
+        <div class="panel" id="icot-result-panel" style="display: none;">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px;">
+            <div>
+              <span class="kicker-label">Official TKA Product Assessment Result</span>
+              <h3 class="subhead-title" style="margin: 0;" id="icot-final-headline">Your Score: 0 / 100</h3>
+            </div>
+            <span class="badge-emerald" id="icot-mastery-badge">Evaluated</span>
+          </div>
+
+          <table class="data-table" style="margin-bottom: 18px;">
+            <thead>
+              <tr>
+                <th>Competency</th>
+                <th>Status</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="icot-rubric-tbody"></tbody>
+          </table>
+
+          <div id="icot-explanations-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+
+          <div style="margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+            <button type="button" class="btn btn-secondary btn-sm" id="icot-retake-btn" onclick="handleRetakeIcot(this)">Retake Independent Test</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="openToolkit('remedial')">Need Extra Practice? Open Remedial</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav-footer">
+      <button type="button" class="btn btn-secondary" onclick="goToPage(3)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        Back to Page 3: JCOT
+      </button>
+      <button type="button" class="btn btn-primary btn-lg" onclick="goToPage(5)">
+        Continue to Page 5: Summary &amp; Final Report
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PAGE 5: LEARNING SUMMARY, REFLECTION & FINAL PERFORMANCE REPORT       -->
+  <!-- ===================================================================== -->
+  <section class="lesson-page" id="page-5" aria-labelledby="summary-heading">
+    <div class="stage-header">
+      <div>
+        <span class="kicker-label">Closing Stage · Learning Summary, Reflection &amp; Report</span>
+        <h2 class="section-title" id="summary-heading">Lesson Takeaways &amp; <em>Performance Report</em></h2>
+      </div>
+      <span class="badge-emerald">Classroom Allocation: 15 Minutes</span>
+    </div>
+
+    <!-- Section 6: Learning Summary Cards -->
+    <span class="kicker-label">Key Lesson Takeaways</span>
+    <div class="arch-grid" style="margin-top: 8px;">
+      <div class="arch-card is-featured">
+        <div class="arch-card-label">Takeaway 01</div>
+        <div class="arch-card-figure" style="font-size: 1.4rem;">Two-Part Structure</div>
+        <p class="arch-card-caption">Identification + Description</p>
+        <p class="arch-card-body">Descriptive texts open by introducing the object (Identification), then detail features, qualities, and value (Description).</p>
+      </div>
+      <div class="arch-card">
+        <div class="arch-card-label">Takeaway 02</div>
+        <div class="arch-card-figure" style="font-size: 1.4rem;">Direct &amp; Inferred</div>
+        <p class="arch-card-caption">Two Ways to Find Meaning</p>
+        <p class="arch-card-body">Some answers appear word-for-word (explicit); others require connecting clues across sentences (inference).</p>
+      </div>
+      <div class="arch-card">
+        <div class="arch-card-label">Takeaway 03</div>
+        <div class="arch-card-figure" style="font-size: 1.4rem;">4-Step Strategy</div>
+        <p class="arch-card-caption">READ → FIND → THINK → ANSWER</p>
+        <p class="arch-card-body">Disciplined strategy prevents careless guessing and helps you locate exact clues quickly.</p>
+      </div>
+      <div class="arch-card">
+        <div class="arch-card-label">Takeaway 04</div>
+        <div class="arch-card-figure" style="font-size: 1.4rem;">Proof Over Opinion</div>
+        <p class="arch-card-caption">Textual Evidence</p>
+        <p class="arch-card-body">Every TKA answer must be justified with proof from the passage: <em>"My answer is … because the text says …"</em></p>
+      </div>
+    </div>
+
+    <div class="ornament-rule">Student Reflection &amp; Final Performance Dashboard</div>
+
+    <div class="passage-split">
+      <!-- Section 7: Interactive Reflection -->
+      <div class="panel" style="margin-bottom: 0;">
+        <span class="kicker-label">Student Reflection</span>
+        <h3 class="subhead-title">Reflect on Your Learning Today</h3>
+        <p style="color: var(--on-surface-variant); margin-top: 0;">
+          Complete all five reflection prompts honestly, then submit your reflection to finalize your performance report.
+        </p>
+
+        <div class="field-group">
+          <label class="field-label" for="ref-1">1. What did you learn today?</label>
+          <textarea class="textarea-input" id="ref-1" placeholder="Write the most important concept or reading strategy you learned..." oninput="saveReflectionField(1, this.value)"></textarea>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="ref-2">2. Can you find information in a descriptive text?</label>
+          <input type="text" class="text-input" id="ref-2" placeholder="e.g., Yes, I can locate explicit details like location and features..." oninput="saveReflectionField(2, this.value)">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="ref-3">3. Can you draw a simple conclusion from the text?</label>
+          <input type="text" class="text-input" id="ref-3" placeholder="e.g., Yes, by connecting historical and cultural clues..." oninput="saveReflectionField(3, this.value)">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="ref-4">4. What was difficult for you today?</label>
+          <textarea class="textarea-input" id="ref-4" placeholder="Note any vocabulary, grammar, or inference steps that felt challenging..." oninput="saveReflectionField(4, this.value)"></textarea>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="ref-5">5. What will you do to improve your reading skills?</label>
+          <textarea class="textarea-input" id="ref-5" placeholder="Write one concrete action for your next English reading lesson..." oninput="saveReflectionField(5, this.value)"></textarea>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+          <button type="button" class="btn btn-primary" onclick="submitReflection()">Submit Reflection</button>
+          <button type="button" class="btn btn-secondary" onclick="exportStudentReport()">Download Study Report (.txt)</button>
+        </div>
+        <div id="reflection-feedback"></div>
+      </div>
+
+      <!-- Final Performance Summary Report -->
+      <div class="panel" style="margin-bottom: 0;">
+        <span class="kicker-label">Student Performance Summary</span>
+        <h3 class="subhead-title">Your 90-Minute Lesson Report</h3>
+
+        <div class="arch-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 12px;">
+          <div class="arch-card is-featured" style="padding: 16px;">
+            <div class="arch-card-label">ICOT TKA Score</div>
+            <div class="arch-card-figure" id="report-icot-score">—</div>
+            <p class="arch-card-caption" id="report-icot-status">Not submitted yet</p>
+          </div>
+          <div class="arch-card" style="padding: 16px;">
+            <div class="arch-card-label">Vocabulary (BKOF)</div>
+            <div class="arch-card-figure" id="report-vocab-score">0 / 11</div>
+            <p class="arch-card-caption" id="report-vocab-status">Pending check</p>
+          </div>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Lesson Stage</th>
+              <th>Activity Status</th>
+              <th>Jump</th>
+            </tr>
+          </thead>
+          <tbody id="report-stage-tbody"></tbody>
+        </table>
+
+        <div class="panel-sand" style="margin-top: 18px; margin-bottom: 0;">
+          <span class="kicker-label">Differentiated Next Steps</span>
+          <p style="margin: 0 0 10px; font-size: 0.9375rem;">
+            Finished early or want to strengthen a skill? Open the <strong>Learning Toolkit</strong> for optional Remedial Practice or the Enrichment TKA Question Builder.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <button type="button" class="btn btn-secondary btn-sm" onclick="openToolkit('remedial')">Remedial Practice</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="openToolkit('enrichment')">Enrichment Challenge</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav-footer">
+      <button type="button" class="btn btn-secondary" onclick="goToPage(4)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        Back to Page 4: ICOT
+      </button>
+      <button type="button" class="btn btn-emerald btn-lg" onclick="goToPage(0)">
+        Return to Lesson Overview
+      </button>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================================= -->
+<!-- DIFFERENTIATED LEARNING TOOLKIT DRAWER (SUPPORT, REMEDIAL, ENRICHMENT)  -->
+<!-- ======================================================================= -->
+<div class="drawer-backdrop" id="toolkit-backdrop" onclick="closeToolkit()"></div>
+<aside class="toolkit-drawer" id="toolkit-drawer" aria-label="Differentiated Learning Toolkit">
+  <div class="drawer-header">
+    <div>
+      <span class="kicker-label" style="margin: 0;">Differentiated Learning Support</span>
+      <h2 class="subhead-title" style="margin: 0;">Reading Toolkit &amp; Extensions</h2>
+    </div>
+    <button type="button" class="btn btn-secondary btn-sm" onclick="closeToolkit()">Close</button>
+  </div>
+
+  <div class="drawer-tabs" role="tablist" aria-label="Toolkit sections">
+    <button type="button" class="filter-pill is-active" data-tab="strategy" onclick="switchToolkitTab('strategy', this)">Strategy Card &amp; Glossary</button>
+    <button type="button" class="filter-pill" data-tab="remedial" onclick="switchToolkitTab('remedial', this)">Remedial Practice</button>
+    <button type="button" class="filter-pill" data-tab="enrichment" onclick="switchToolkitTab('enrichment', this)">Enrichment Challenge</button>
+  </div>
+
+  <div class="drawer-body">
+    <!-- Tab 1: Strategy Card & Glossary -->
+    <div class="drawer-pane is-active" id="toolkit-pane-strategy">
+      <div class="panel-sand">
+        <span class="badge-terracotta" style="margin-bottom: 8px;">Reading Strategy Card</span>
+        <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+          <li><strong>READ:</strong> Read the question first. Circle question words (<em>Where, What, Why, Which</em>).</li>
+          <li><strong>FIND:</strong> Scan the text for matching keywords or synonyms.</li>
+          <li><strong>THINK:</strong> Check if the answer is stated directly or needs two clues linked together.</li>
+          <li><strong>ANSWER:</strong> Test each choice against the text using: <em>"My answer is … because the text says …"</em></li>
+        </ol>
+      </div>
+
+      <h3 class="subhead-title">Module Glossary</h3>
+      <table class="data-table" style="margin-bottom: 20px;">
+        <thead>
+          <tr><th>Term</th><th>Explanation</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Descriptive Text</strong></td><td>Text that describes a specific person, place, animal, or thing.</td></tr>
+          <tr><td><strong>Identification</strong></td><td>Opening part that introduces the object being described.</td></tr>
+          <tr><td><strong>Description</strong></td><td>Part explaining characteristics, features, qualities, and details.</td></tr>
+          <tr><td><strong>Explicit Information</strong></td><td>Information stated directly word-for-word in the text.</td></tr>
+          <tr><td><strong>Inference</strong></td><td>Logical conclusion drawn from clues in the text.</td></tr>
+          <tr><td><strong>Evidence</strong></td><td>Exact sentence or detail in the passage supporting an answer.</td></tr>
+          <tr><td><strong>Reading Strategy</strong></td><td>Structured steps used to understand a passage accurately.</td></tr>
+          <tr><td><strong>TKA</strong></td><td>Tes Kemampuan Akademik — academic reading assessment measuring comprehension and reasoning.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="subhead-title">Heritage Vocabulary Reference</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>English</th><th>Indonesian / Meaning</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Temple / Sanctuary</td><td>Candi / Tempat suci bersejarah</td></tr>
+          <tr><td>Heritage</td><td>Warisan</td></tr>
+          <tr><td>Historical</td><td>Bersejarah</td></tr>
+          <tr><td>Ancient</td><td>Kuno</td></tr>
+          <tr><td>Located</td><td>Terletak</td></tr>
+          <tr><td>Visitors</td><td>Pengunjung</td></tr>
+          <tr><td>Carving / Relief</td><td>Ukiran batu pada dinding candi</td></tr>
+          <tr><td>Statue</td><td>Patung</td></tr>
+          <tr><td>Stupa</td><td>Bangunan kubah lonceng di atas candi Buddha</td></tr>
+          <tr><td>Preserve</td><td>Melestarikan</td></tr>
+          <tr><td>Cultural</td><td>Budaya</td></tr>
+          <tr><td>Impressive / Majestic</td><td>Mengagumkan / Megah</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tab 2: Remedial Practice -->
+    <div class="drawer-pane" id="toolkit-pane-remedial">
+      <span class="badge-emerald" style="margin-bottom: 8px;">Optional Support · Remedial</span>
+      <h3 class="subhead-title">Guided Practice: Mendut Temple</h3>
+      <p style="color: var(--on-surface-variant); margin-top: 0;">
+        Read this shorter descriptive passage and practice finding explicit facts, making a simple conclusion, and spotting evidence.
+      </p>
+
+      <div class="q-card" style="margin-bottom: 16px;">
+        <h4 style="margin: 0 0 8px; font-family: var(--font-headline); font-size: 1.35rem;">Mendut Temple</h4>
+        <p style="margin: 0 0 8px;">Mendut Temple is a small Buddhist temple located near Borobudur in Central Java. It was built in the ninth century.</p>
+        <p style="margin: 0;">Inside the temple, there is a large stone statue of Buddha. The outer walls have neat carvings. Many visitors stop at Mendut Temple to admire its calm atmosphere and historical beauty.</p>
+      </div>
+
+      <div class="q-card" style="margin-bottom: 12px;">
+        <span class="q-label">Remedial 1 · Explicit Fact</span>
+        <p class="q-prompt">Where is Mendut Temple located?</p>
+        <div class="choice-list" id="rem-q1-choices">
+          <button type="button" class="choice-btn" onclick="answerRemedial(1, 'A')"><span class="choice-letter">A</span> Near Borobudur in Central Java</button>
+          <button type="button" class="choice-btn" onclick="answerRemedial(1, 'B')"><span class="choice-letter">B</span> In Bali</button>
+        </div>
+        <div id="rem-q1-fb"></div>
+      </div>
+
+      <div class="q-card" style="margin-bottom: 12px;">
+        <span class="q-label">Remedial 2 · Simple Conclusion</span>
+        <p class="q-prompt">What can we conclude about Mendut Temple?</p>
+        <div class="choice-list" id="rem-q2-choices">
+          <button type="button" class="choice-btn" onclick="answerRemedial(2, 'A')"><span class="choice-letter">A</span> It is a peaceful historical site worth visiting.</button>
+          <button type="button" class="choice-btn" onclick="answerRemedial(2, 'B')"><span class="choice-letter">B</span> It is a noisy modern market.</button>
+        </div>
+        <div id="rem-q2-fb"></div>
+      </div>
+
+      <div class="q-card">
+        <span class="q-label">Remedial 3 · Evidence Check</span>
+        <p class="q-prompt">Which sentence proves Mendut Temple has art inside?</p>
+        <div class="choice-list" id="rem-q3-choices">
+          <button type="button" class="choice-btn" onclick="answerRemedial(3, 'A')"><span class="choice-letter">A</span> "Inside the temple, there is a large stone statue of Buddha."</button>
+          <button type="button" class="choice-btn" onclick="answerRemedial(3, 'B')"><span class="choice-letter">B</span> "It was built in the ninth century."</button>
+        </div>
+        <div id="rem-q3-fb"></div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Enrichment Challenge -->
+    <div class="drawer-pane" id="toolkit-pane-enrichment">
+      <span class="badge-terracotta" style="margin-bottom: 8px;">Optional Extension · Enrichment</span>
+      <h3 class="subhead-title">Ratu Boko Palace &amp; TKA Question Authoring</h3>
+      <p style="color: var(--on-surface-variant); margin-top: 0;">
+        Read this richer passage, solve the complex inference check, and design your own TKA-oriented question with textual evidence.
+      </p>
+
+      <div class="q-card" style="margin-bottom: 16px;">
+        <h4 style="margin: 0 0 8px; font-family: var(--font-headline); font-size: 1.35rem;">Ratu Boko Heritage Complex</h4>
+        <p style="margin: 0 0 8px;">Ratu Boko is an archaeological site standing on a limestone plateau three kilometers south of Prambanan Temple in Yogyakarta. Unlike nearby temples built purely for worship, Ratu Boko preserves stone gates, bathing pools, and defensive walls from an ancient royal settlement.</p>
+        <p style="margin: 0;">Because the hilltop overlooks both Mount Merapi and the Prambanan plain, historians believe the site served both ceremonial and strategic roles. Protecting its fragile stone terraces helps preserve evidence of Java's early kingdoms.</p>
+      </div>
+
+      <div class="q-card" style="margin-bottom: 16px;">
+        <span class="q-label">Enrichment Inference Check</span>
+        <p class="q-prompt">Why does the writer mention bathing pools, defensive walls, and a hilltop view?</p>
+        <div class="choice-list" id="enr-q1-choices">
+          <button type="button" class="choice-btn" onclick="answerEnrichment('A')"><span class="choice-letter">A</span> To show Ratu Boko functioned as a royal and strategic complex, not just a single shrine.</button>
+          <button type="button" class="choice-btn" onclick="answerEnrichment('B')"><span class="choice-letter">B</span> To argue that Ratu Boko is newer than modern Yogyakarta hotels.</button>
+        </div>
+        <div id="enr-q1-fb"></div>
+      </div>
+
+      <div class="q-card">
+        <span class="q-label">Create Your Own TKA Question</span>
+        <div class="field-group">
+          <label class="field-label" for="enr-type">Question Skill Level</label>
+          <select class="text-input" id="enr-type">
+            <option value="Inferential Understanding">Inferential Understanding</option>
+            <option value="Evaluating Information Based on Evidence">Evaluating Information Based on Evidence</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="enr-prompt">Your TKA Question</label>
+          <input type="text" class="text-input" id="enr-prompt" placeholder="e.g., What can we infer about the builders of Ratu Boko?">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="enr-evidence">Supporting Evidence Quote from the Passage</label>
+          <textarea class="textarea-input" id="enr-evidence" placeholder="Paste the exact sentence that proves your answer..."></textarea>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm" onclick="saveEnrichmentDraft()">Save Question Draft</button>
+        <div id="enr-saved-list" style="margin-top: 12px;"></div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<api-shim></api-shim>
+<script>
+  // =========================================================================
+  // DATA DEFINITIONS (All strings in backtick template literals for safety)
+  // =========================================================================
+  var STAGE_META = [
+    { label: `Introduction — Welcome & Learning Objectives`, time: `Page 0 of 5 · Lesson Duration: 90 Minutes`, progress: 12 },
+    { label: `Page 1 · Building Knowledge of the Field (BKOF)`, time: `Stage 1 of 4 · Allocation: 10 Minutes`, progress: 28 },
+    { label: `Page 2 · Modelling of the Text (MOT)`, time: `Stage 2 of 4 · Allocation: 15 Minutes`, progress: 48 },
+    { label: `Page 3 · Joint Construction of the Text (JCOT)`, time: `Stage 3 of 4 · Allocation: 15 Minutes`, progress: 68 },
+    { label: `Page 4 · Independent Construction of the Text (ICOT)`, time: `Stage 4 of 4 · Allocation: 20 Minutes`, progress: 86 },
+    { label: `Page 5 · Learning Summary, Reflection & Report`, time: `Closing · Allocation: 15 Minutes`, progress: 100 }
+  ];
+
+  var HOTSPOTS = {
+    stupa: `<strong>Stupa:</strong> Bell-shaped volcanic stone domes on the upper circular terraces that house statues of Buddha.`,
+    relief: `<strong>Carved Relief (Ukiran):</strong> Intricate stone wall carvings telling stories of ancient life and Buddhist teachings.`,
+    sanctuary: `<strong>Ancient Sanctuary (Candi Kuno):</strong> A sacred historical monument built in the 9th century that must be preserved.`,
+    majestic: `<strong>Majestic Levels (Mengagumkan):</strong> Nine stepped stone levels rising like a giant pyramid above the Kedu Plain.`
+  };
+
+  var VOCAB_PAIRS = [
+    { id: `temple`, en: `Temple`, idMeaning: `Candi` },
+    { id: `heritage`, en: `Heritage`, idMeaning: `Warisan` },
+    { id: `historical`, en: `Historical`, idMeaning: `Bersejarah` },
+    { id: `ancient`, en: `Ancient`, idMeaning: `Kuno` },
+    { id: `located`, en: `Located`, idMeaning: `Terletak` },
+    { id: `visitors`, en: `Visitors`, idMeaning: `Pengunjung` },
+    { id: `carving`, en: `Carving`, idMeaning: `Ukiran` },
+    { id: `statue`, en: `Statue`, idMeaning: `Patung` },
+    { id: `preserve`, en: `Preserve`, idMeaning: `Melestarikan` },
+    { id: `cultural`, en: `Cultural`, idMeaning: `Budaya` },
+    { id: `impressive`, en: `Impressive`, idMeaning: `Mengagumkan` }
+  ];
+
+  var VOCAB_BANK_ORDER = [
+    `Ukiran`, `Candi`, `Melestarikan`, `Terletak`, `Mengagumkan`,
+    `Warisan`, `Kuno`, `Patung`, `Budaya`, `Bersejarah`, `Pengunjung`
+  ];
+
+  var STRATEGY_STEPS = [
+    `<strong>Step 1 — READ:</strong> Read the question carefully and identify the question focus (e.g., <em>Where</em> asks for a place; <em>What can we infer</em> asks for a conclusion; <em>Which statement is supported</em> asks you to verify claims).`,
+    `<strong>Step 2 — FIND:</strong> Scan the descriptive passage for matching keywords, synonyms, or specific nouns (e.g., <em>located, Magelang, carvings, preserved</em>).`,
+    `<strong>Step 3 — THINK:</strong> Read the full sentence around the keyword. Check whether the answer is directly stated or requires connecting two clues together.`,
+    `<strong>Step 4 — ANSWER:</strong> Choose or write the option that matches the exact textual evidence — never rely on guesswork or outside assumptions.`
+  ];
+
+  var INLINE_VOCAB = {
+    ancient: { word: `ancient`, id: `kuno`, note: `Adjective describing something very old, from many centuries ago.` },
+    located: { word: `located`, id: `terletak`, note: `Past participle used to show where a monument stands.` },
+    visitors: { word: `visitors`, id: `pengunjung`, note: `People who travel to see a monument or heritage site.` },
+    levels: { word: `levels`, id: `tingkatan`, note: `The nine stepped stone tiers of Borobudur Temple.` },
+    carvings: { word: `carvings`, id: `ukiran`, note: `Detailed stone relief artwork covering the temple walls.` },
+    statues: { word: `statues`, id: `patung`, note: `Sculpted stone figures of Buddha seated along the terraces.` },
+    impressive: { word: `impressive`, id: `mengagumkan`, note: `Adjective praising the grand and remarkable architecture.` },
+    historical: { word: `historical`, id: `bersejarah`, note: `Connected with history and events of the past.` },
+    cultural: { word: `cultural`, id: `budaya`, note: `Connected with the traditions, arts, and identity of a society.` },
+    heritage: { word: `heritage`, id: `warisan`, note: `Valuable traditions and monuments passed down to future generations.` }
+  };
+
+  var THINK_ALOUD_DEMOS = [
+    {
+      targetEv: `mot-ev-loc`,
+      steps: [
+        { title: `1. The Question (Textual)`, text: `Where is Borobudur Temple located?` },
+        { title: `2. Spot the Keyword`, text: `Key question word: "Where" (location) + "located".` },
+        { title: `3. Locate Sentence in Text`, text: `"Borobudur Temple is an ancient Buddhist monument located in Central Java, Indonesia. Standing near the town of Magelang..."` },
+        { title: `4. Reasoning Process`, text: `The location is stated explicitly right after the word "located" and "near". No guessing needed.` },
+        { title: `5. Final Answer & Evidence`, text: `Central Java, Indonesia (near Magelang) — because the text explicitly states "located in Central Java, Indonesia. Standing near the town of Magelang."` }
+      ]
+    },
+    {
+      targetEv: `mot-ev-imp`,
+      steps: [
+        { title: `1. The Question (Inferential)`, text: `What can we infer about the importance of Borobudur Temple?` },
+        { title: `2. Spot the Keyword`, text: `Key words: "infer" (draw conclusion) + "importance".` },
+        { title: `3. Locate Clues in Text`, text: `"As a valuable historical and cultural heritage site, Borobudur must be preserved so that future generations can still enjoy it."` },
+        { title: `4. Reasoning Process`, text: `Link three clues: it is "valuable", it represents "historical and cultural heritage", and it "must be preserved for future generations".` },
+        { title: `5. Final Answer & Evidence`, text: `Borobudur is a vital national and cultural treasure that connects Indonesia's past with future generations.` }
+      ]
+    },
+    {
+      targetEv: `mot-ev-carve`,
+      steps: [
+        { title: `1. The Question (Evaluating Evidence)`, text: `Which statement is best supported by the text: "Borobudur has stone carvings" or "Borobudur is a modern mall"?` },
+        { title: `2. Spot the Keyword`, text: `Check the key nouns in each statement: "stone carvings" vs. "modern mall".` },
+        { title: `3. Locate Sentence in Text`, text: `"The monument is made of stone... Its walls are covered with detailed carvings, and hundreds of statues of Buddha sit along the terraces."` },
+        { title: `4. Reasoning Process`, text: `The passage directly mentions stone, detailed carvings, and ancient 9th-century origins — directly refuting "modern mall".` },
+        { title: `5. Final Answer & Evidence`, text: `"Borobudur has stone carvings" is supported because the text explicitly mentions stone construction and detailed carvings on its walls.` }
+      ]
+    }
+  ];
+
+  var ICOT_QUESTIONS = [
+    {
+      num: 1,
+      skill: `Textual Understanding`,
+      competency: `Finding explicit information`,
+      prompt: `Where is Prambanan Temple located?`,
+      options: [
+        { key: `A`, text: `Near Jakarta` },
+        { key: `B`, text: `Near Yogyakarta` },
+        { key: `C`, text: `Near Bali` },
+        { key: `D`, text: `Near Surabaya` }
+      ],
+      correct: `B`,
+      evidenceId: `icot-ev-1`,
+      explanation: `Paragraph 1 explicitly states the exact location: "It stands in Central Java, near Yogyakarta."`
+    },
+    {
+      num: 2,
+      skill: `Inferential Understanding`,
+      competency: `Making inferences`,
+      prompt: `What can we infer about Prambanan Temple?`,
+      options: [
+        { key: `A`, text: `It is an important historical and cultural place.` },
+        { key: `B`, text: `It has no cultural value.` },
+        { key: `C`, text: `It is a modern shopping centre.` },
+        { key: `D`, text: `It is only a place for entertainment.` }
+      ],
+      correct: `A`,
+      evidenceId: `icot-ev-2b`,
+      explanation: `Visitors come to learn about Indonesian history and culture, and the text calls it a "significant part of Indonesia's cultural heritage."`
+    },
+    {
+      num: 3,
+      skill: `Evaluating Information Based on Evidence`,
+      competency: `Determining answers based on textual evidence`,
+      prompt: `Which statement is best supported by the text?`,
+      options: [
+        { key: `A`, text: `Prambanan Temple should be protected for future generations.` },
+        { key: `B`, text: `Prambanan Temple is located in Bali.` },
+        { key: `C`, text: `Prambanan Temple has no cultural importance.` },
+        { key: `D`, text: `Prambanan Temple is a modern building.` }
+      ],
+      correct: `A`,
+      evidenceId: `icot-ev-3`,
+      explanation: `The final sentence directly supports option A: "For this reason, it should be protected and preserved for future generations."`
+    }
+  ];
+
+  // =========================================================================
+  // APPLICATION STATE
+  // =========================================================================
+  function createDefaultState() {
+    return {
+      currentPage: 0,
+      visitedPages: [0],
+      bkofWarmup: {},
+      vocabMatches: {},
+      vocabChecked: false,
+      vocabScore: 0,
+      motHighlight: `structure`,
+      motReadConfirmed: false,
+      jcotInputs: { 1: ``, 2: ``, 3: ``, 4: `` },
+      jcotMcq: {},
+      jcotSubmitted: false,
+      jcotBridge: null,
+      icotCurrentQ: 0,
+      icotAnswers: {},
+      icotReasons: { 0: ``, 1: ``, 2: `` },
+      icotSubmitted: false,
+      icotScore9: 0,
+      reflections: { 1: ``, 2: ``, 3: ``, 4: ``, 5: `` },
+      reflectionSubmitted: false,
+      remedialAnswers: {},
+      enrichmentAnswer: null,
+      enrichmentDrafts: []
+    };
+  }
+
+  var appState = createDefaultState();
+  var selectedVocabChip = null;
+  var currentTaDemo = 0;
+  var currentTaStep = 1;
+  var jcotSecondsLeft = 180;
+  var jcotTimerId = null;
+
+  // =========================================================================
+  // STATE PERSISTENCE (notebookAppApi)
+  // =========================================================================
+  async function persistState() {
+    try {
+      if (window.notebookAppApi && typeof window.notebookAppApi.setAppState === `function`) {
+        await window.notebookAppApi.setAppState(appState);
+      }
+    } catch (e) {
+      // Safe fallback in environments without host persistence
+    }
+  }
+
+  async function initApp() {
+    try {
+      if (window.notebookAppApi && typeof window.notebookAppApi.getAppState === `function`) {
+        var saved = await window.notebookAppApi.getAppState();
+        if (saved && typeof saved === `object`) {
+          var def = createDefaultState();
+          appState = Object.assign({}, def, saved);
+          if (!Array.isArray(appState.visitedPages)) appState.visitedPages = [0];
+        }
+      }
+    } catch (e) {
+      appState = createDefaultState();
+    }
+
+    renderAllFromState();
+
+    try {
+      if (window.notebookAppApi && typeof window.notebookAppApi.notifyAppReady === `function`) {
+        window.notebookAppApi.notifyAppReady();
+      }
+    } catch (e) {
+      // Ignore if shim not active
+    }
+  }
+
+  function escapeHtml(str) {
+    return String(str || ``)
+      .replace(/&/g, `&amp;`)
+      .replace(/</g, `&lt;`)
+      .replace(/>/g, `&gt;`)
+      .replace(/"/g, `&quot;`)
+      .replace(/'/g, `&#39;`);
+  }
+
+  function renderAllFromState() {
+    goToPage(appState.currentPage || 0, true);
+    renderWarmupFromState();
+    renderVocabActivity();
+    renderThinkAloud();
+    renderMotState();
+    renderJcotState();
+    renderIcotStage();
+    renderReflectionsState();
+    renderRemedialState();
+    renderEnrichmentState();
+    updateProgressUI();
+  }
+
+  // =========================================================================
+  // MULTI-PAGE NAVIGATION & PROGRESS TRACKER
+  // =========================================================================
+  function goToPage(pageIdx, skipSave) {
+    if (pageIdx < 0 || pageIdx > 5) return;
+    appState.currentPage = pageIdx;
+    if (appState.visitedPages.indexOf(pageIdx) === -1) {
+      appState.visitedPages.push(pageIdx);
+    }
+
+    var pages = document.querySelectorAll(`.lesson-page`);
+    for (var i = 0; i < pages.length; i++) {
+      pages[i].classList.remove(`is-active`);
+    }
+    var target = document.getElementById(`page-` + pageIdx);
+    if (target) target.classList.add(`is-active`);
+
+    var stepBtns = document.querySelectorAll(`.step-btn`);
+    for (var j = 0; j < stepBtns.length; j++) {
+      var p = Number(stepBtns[j].getAttribute(`data-page`));
+      stepBtns[j].classList.toggle(`is-active`, p === pageIdx);
+    }
+
+    var meta = STAGE_META[pageIdx];
+    var stageLabel = document.getElementById(`stepper-stage-label`);
+    var timeLabel = document.getElementById(`stepper-time-label`);
+    var fill = document.getElementById(`stepper-track-fill`);
+    var bar = document.getElementById(`stepper-progressbar`);
+    if (stageLabel && meta) stageLabel.textContent = meta.label;
+    if (timeLabel && meta) timeLabel.textContent = meta.time;
+    if (fill && meta) fill.style.width = meta.progress + `%`;
+    if (bar && meta) bar.setAttribute(`aria-valuenow`, String(meta.progress));
+
+    updateProgressUI();
+    if (pageIdx === 5) renderPerformanceReport();
+
+    if (!skipSave) {
+      persistState();
+      window.scrollTo({ top: 0, behavior: `smooth` });
+    }
+  }
+
+  function getCompletionStatus() {
+    var bkofDone = Object.keys(appState.bkofWarmup).length >= 3 && appState.vocabChecked;
+    var motDone = Boolean(appState.motReadConfirmed);
+    var jcotDone = Boolean(appState.jcotSubmitted);
+    var icotDone = Boolean(appState.icotSubmitted);
+    var summaryDone = Boolean(appState.reflectionSubmitted);
+
+    var completedCount = [bkofDone, motDone, jcotDone, icotDone, summaryDone].filter(Boolean).length;
+    var pct = Math.round((completedCount / 5) * 100);
+    return {
+      bkofDone: bkofDone,
+      motDone: motDone,
+      jcotDone: jcotDone,
+      icotDone: icotDone,
+      summaryDone: summaryDone,
+      pct: pct
+    };
+  }
+
+  function updateProgressUI() {
+    var status = getCompletionStatus();
+    var pillText = document.getElementById(`overall-progress-text`);
+    if (pillText) pillText.textContent = status.pct + `% Complete`;
+
+    var mapDone = {
+      0: appState.visitedPages.indexOf(1) !== -1,
+      1: status.bkofDone,
+      2: status.motDone,
+      3: status.jcotDone,
+      4: status.icotDone,
+      5: status.summaryDone
+    };
+
+    var stepBtns = document.querySelectorAll(`.step-btn`);
+    for (var i = 0; i < stepBtns.length; i++) {
+      var p = Number(stepBtns[i].getAttribute(`data-page`));
+      stepBtns[i].classList.toggle(`is-done`, Boolean(mapDone[p]));
+    }
+  }
+
+  function handleResetProgress(btn) {
+    if (!btn) return;
+    if (btn.dataset.armed !== `true`) {
+      btn.dataset.armed = `true`;
+      btn.textContent = `Confirm Reset?`;
+      setTimeout(function () {
+        if (btn.dataset.armed === `true`) {
+          btn.dataset.armed = `false`;
+          btn.textContent = `Reset`;
+        }
+      }, 4000);
+      return;
+    }
+    btn.dataset.armed = `false`;
+    btn.textContent = `Reset`;
+    appState = createDefaultState();
+    selectedVocabChip = null;
+    currentTaDemo = 0;
+    currentTaStep = 1;
+    persistState();
+    renderAllFromState();
+  }
+
+  // =========================================================================
+  // PAGE 1: BKOF INTERACTIONS
+  // =========================================================================
+  function showHotspot(key, btn) {
+    var detail = document.getElementById(`bkof-hotspot-detail`);
+    if (detail && HOTSPOTS[key]) detail.innerHTML = HOTSPOTS[key];
+    var chips = document.querySelectorAll(`.hotspot-chip`);
+    for (var i = 0; i < chips.length; i++) {
+      chips[i].classList.remove(`is-active`);
+    }
+    if (btn) btn.classList.add(`is-active`);
+  }
+
+  function answerWarmup(qNum, val) {
+    appState.bkofWarmup[qNum] = val;
+    renderWarmupFromState();
+    updateProgressUI();
+    persistState();
+  }
+
+  function renderWarmupFromState() {
+    var configs = {
+      1: {
+        correct: `Borobudur Temple`,
+        okMsg: `Correct! This is Borobudur Temple, an ancient Buddhist monument in Central Java.`,
+        errMsg: `Not quite — look closely at the nine stepped levels and bell-shaped stupas. That is Borobudur Temple.`
+      },
+      2: {
+        anyPositive: true,
+        msgMap: {
+          visited: `Wonderful! Your real-world memory will help you picture the stone galleries as we read.`,
+          media: `Great! Seeing it in media already gives you helpful background knowledge before reading.`,
+          notyet: `No problem at all — today's descriptive text will help you visualize Borobudur clearly.`
+        }
+      },
+      3: {
+        correct: `yes`,
+        okMsg: `Yes! Borobudur Temple is located in Central Java, Indonesia.`,
+        errMsg: `Actually, Borobudur Temple is right in Indonesia (Central Java, near Magelang).`
+      },
+      4: {
+        correct: `yes`,
+        okMsg: `Correct! It was built in the ninth century and is a priceless historical site.`,
+        errMsg: `Look at its ancient stone architecture — it was built in the 9th century, making it a historical place.`
+      }
+    };
+
+    for (var q = 1; q <= 4; q++) {
+      var val = appState.bkofWarmup[q];
+      var container = document.getElementById(`warmup-q` + q + `-choices`);
+      var fbEl = document.getElementById(`warmup-q` + q + `-fb`);
+      if (!container || !fbEl) continue;
+
+      var btns = container.querySelectorAll(`.choice-btn`);
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove(`is-selected`, `is-correct`, `is-wrong`);
+        var onclickAttr = btns[i].getAttribute(`onclick`) || ``;
+        var matched = val && onclickAttr.indexOf(`'` + val + `'`) !== -1;
+        if (matched) {
+          if (configs[q].anyPositive) {
+            btns[i].classList.add(`is-correct`);
+          } else if (val === configs[q].correct) {
+            btns[i].classList.add(`is-correct`);
+          } else {
+            btns[i].classList.add(`is-wrong`);
+          }
+        }
+      }
+
+      if (!val) {
+        fbEl.innerHTML = ``;
+      } else if (configs[q].anyPositive) {
+        fbEl.innerHTML = `<div class="feedback-box is-positive">` + configs[q].msgMap[val] + `</div>`;
+      } else if (val === configs[q].correct) {
+        fbEl.innerHTML = `<div class="feedback-box is-positive">` + configs[q].okMsg + `</div>`;
+      } else {
+        fbEl.innerHTML = `<div class="feedback-box is-error">` + configs[q].errMsg + `</div>`;
+      }
+    }
+  }
+
+  // Vocabulary Matching (Drag-and-Drop + Click-to-Pair)
+  function renderVocabActivity() {
+    var bankEl = document.getElementById(`vocab-bank`);
+    var slotsEl = document.getElementById(`vocab-slots`);
+    var badgeEl = document.getElementById(`vocab-score-badge`);
+    var fbArea = document.getElementById(`vocab-feedback-area`);
+    if (!bankEl || !slotsEl) return;
+
+    var usedValues = Object.values(appState.vocabMatches || {});
+    bankEl.innerHTML = ``;
+    var remainingCount = 0;
+
+    for (var i = 0; i < VOCAB_BANK_ORDER.length; i++) {
+      var meaning = VOCAB_BANK_ORDER[i];
+      if (usedValues.indexOf(meaning) !== -1) continue;
+      remainingCount++;
+      var chip = document.createElement(`button`);
+      chip.type = `button`;
+      chip.className = `vocab-chip` + (selectedVocabChip === meaning ? ` is-selected` : ``);
+      chip.textContent = meaning;
+      chip.draggable = true;
+      chip.setAttribute(`data-meaning`, meaning);
+      chip.onclick = (function (m) {
+        return function () {
+          selectedVocabChip = selectedVocabChip === m ? null : m;
+          renderVocabActivity();
+        };
+      })(meaning);
+      chip.ondragstart = (function (m) {
+        return function (ev) {
+          ev.dataTransfer.setData(`text/plain`, m);
+          selectedVocabChip = m;
+        };
+      })(meaning);
+      bankEl.appendChild(chip);
+    }
+
+    if (remainingCount === 0) {
+      bankEl.innerHTML = `<span style="color: var(--on-surface-variant); font-size: 0.9rem;">All 11 meanings placed! Click Check Answers to score your matches, or click any filled row to adjust.</span>`;
+    }
+
+    slotsEl.innerHTML = ``;
+    for (var j = 0; j < VOCAB_PAIRS.length; j++) {
+      var item = VOCAB_PAIRS[j];
+      var placed = appState.vocabMatches[item.id] || ``;
+      var slot = document.createElement(`div`);
+      slot.className = `match-slot`;
+      if (appState.vocabChecked && placed) {
+        slot.classList.add(placed === item.idMeaning ? `is-correct` : `is-wrong`);
+      }
+
+      slot.onclick = (function (itemId, currentPlaced) {
+        return function () {
+          if (selectedVocabChip) {
+            appState.vocabMatches[itemId] = selectedVocabChip;
+            selectedVocabChip = null;
+            appState.vocabChecked = false;
+            renderVocabActivity();
+            persistState();
+          } else if (currentPlaced) {
+            delete appState.vocabMatches[itemId];
+            appState.vocabChecked = false;
+            renderVocabActivity();
+            persistState();
+          }
+        };
+      })(item.id, placed);
+
+      slot.ondragover = function (ev) {
+        ev.preventDefault();
+        this.classList.add(`is-dragover`);
+      };
+      slot.ondragleave = function () {
+        this.classList.remove(`is-dragover`);
+      };
+      slot.ondrop = (function (itemId) {
+        return function (ev) {
+          ev.preventDefault();
+          this.classList.remove(`is-dragover`);
+          var data = ev.dataTransfer.getData(`text/plain`) || selectedVocabChip;
+          if (data) {
+            appState.vocabMatches[itemId] = data;
+            selectedVocabChip = null;
+            appState.vocabChecked = false;
+            renderVocabActivity();
+            persistState();
+          }
+        };
+      })(item.id);
+
+      var enSpan = document.createElement(`span`);
+      enSpan.className = `match-en`;
+      enSpan.textContent = item.en;
+
+      var dropSpan = document.createElement(`span`);
+      dropSpan.className = `match-drop-zone` + (placed ? ` has-value` : ``);
+      dropSpan.textContent = placed || `Drop or click`;
+
+      slot.appendChild(enSpan);
+      slot.appendChild(dropSpan);
+      slotsEl.appendChild(slot);
+    }
+
+    if (badgeEl) {
+      badgeEl.textContent = `Score: ` + (appState.vocabScore || 0) + ` / 11`;
+    }
+
+    if (fbArea) {
+      if (appState.vocabChecked) {
+        var boxCls = appState.vocabScore === 11 ? `is-positive` : (appState.vocabScore >= 8 ? `is-warning` : `is-error`);
+        var msg = appState.vocabScore === 11
+          ? `Excellent! All 11 vocabulary pairs are matched accurately.`
+          : `You matched ` + appState.vocabScore + ` out of 11 correctly. Click any red slot to move its meaning card and try again.`;
+        fbArea.innerHTML = `<div class="feedback-box ` + boxCls + `">` + msg + `</div>`;
+      } else {
+        fbArea.innerHTML = ``;
+      }
+    }
+  }
+
+  function checkVocabAnswers() {
+    var score = 0;
+    for (var i = 0; i < VOCAB_PAIRS.length; i++) {
+      var item = VOCAB_PAIRS[i];
+      if (appState.vocabMatches[item.id] === item.idMeaning) {
+        score++;
+      }
+    }
+    appState.vocabScore = score;
+    appState.vocabChecked = true;
+    renderVocabActivity();
+    updateProgressUI();
+    persistState();
+  }
+
+  function resetVocabActivity() {
+    appState.vocabMatches = {};
+    appState.vocabChecked = false;
+    appState.vocabScore = 0;
+    selectedVocabChip = null;
+    renderVocabActivity();
+    updateProgressUI();
+    persistState();
+  }
+
+  function selectStrategyStep(idx, btn) {
+    var detail = document.getElementById(`strategy-step-detail`);
+    if (detail && STRATEGY_STEPS[idx]) detail.innerHTML = STRATEGY_STEPS[idx];
+    var cards = document.querySelectorAll(`.strategy-step-card`);
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.remove(`is-active`);
+    }
+    if (btn) btn.classList.add(`is-active`);
+  }
+
+  // =========================================================================
+  // PAGE 2: MOT INTERACTIONS
+  // =========================================================================
+  function setMotHighlight(mode, btn, skipSave) {
+    appState.motHighlight = mode;
+    var body = document.getElementById(`mot-passage-body`);
+    if (body) {
+      body.classList.remove(`mode-structure`, `mode-verbs`, `mode-adjectives`, `mode-preps`);
+      if (mode !== `none`) body.classList.add(`mode-` + mode);
+    }
+
+    var toolbar = btn ? btn.parentElement : document.querySelector(`.passage-toolbar`);
+    if (toolbar) {
+      var pills = toolbar.querySelectorAll(`.filter-pill`);
+      for (var i = 0; i < pills.length; i++) {
+        pills[i].classList.remove(`is-active`);
+      }
+    }
+    if (btn) btn.classList.add(`is-active`);
+
+    var legend = document.getElementById(`mot-legend`);
+    if (legend) {
+      if (mode === `structure`) {
+        legend.innerHTML = `<span class="legend-swatch"><span class="swatch-dot" style="background: var(--hl-ident-border);"></span> Identification (Para 1)</span><span class="legend-swatch"><span class="swatch-dot" style="background: var(--hl-desc-border);"></span> Description (Para 2)</span><span class="legend-swatch">Click dotted words for Indonesian meaning</span>`;
+      } else if (mode === `verbs`) {
+        legend.innerHTML = `<span class="legend-swatch"><span class="swatch-dot" style="background: var(--secondary);"></span> Simple Present &amp; Passive Voice (is, was built, are covered, must be preserved)</span>`;
+      } else if (mode === `adjectives`) {
+        legend.innerHTML = `<span class="legend-swatch"><span class="swatch-dot" style="background: var(--hl-adj-ink);"></span> Descriptive Adjectives (ancient, largest, detailed, impressive, valuable)</span>`;
+      } else if (mode === `preps`) {
+        legend.innerHTML = `<span class="legend-swatch"><span class="swatch-dot" style="background: var(--hl-prep-ink);"></span> Spatial &amp; Time Prepositions (in Central Java, near Magelang, along the terraces)</span>`;
+      } else {
+        legend.innerHTML = `<span class="legend-swatch">Plain reading view active. Click any dotted word for its Indonesian meaning.</span>`;
+      }
+    }
+    if (!skipSave) persistState();
+  }
+
+  function renderMotState() {
+    var mode = appState.motHighlight || `structure`;
+    var pills = document.querySelectorAll(`.passage-toolbar .filter-pill`);
+    var matchedBtn = null;
+    for (var i = 0; i < pills.length; i++) {
+      var onclickVal = pills[i].getAttribute(`onclick`) || ``;
+      if (onclickVal.indexOf(`'` + mode + `'`) !== -1) matchedBtn = pills[i];
+    }
+    setMotHighlight(mode, matchedBtn, true);
+
+    var btn = document.getElementById(`mot-confirm-btn`);
+    var badge = document.getElementById(`mot-reading-badge`);
+    if (btn && badge) {
+      if (appState.motReadConfirmed) {
+        btn.textContent = `Passage Analyzed ✓`;
+        badge.textContent = `Completed`;
+      } else {
+        btn.textContent = `Mark Passage Analyzed`;
+        badge.textContent = `Explore Highlights`;
+      }
+    }
+  }
+
+  function toggleMotStructureNote() {
+    var note = document.getElementById(`mot-structure-note`);
+    if (!note) return;
+    note.style.display = note.style.display === `none` ? `block` : `none`;
+  }
+
+  function confirmMotReading() {
+    appState.motReadConfirmed = true;
+    renderMotState();
+    updateProgressUI();
+    persistState();
+  }
+
+  function revealVocab(key) {
+    var box = document.getElementById(`mot-vocab-inspector`);
+    var info = INLINE_VOCAB[key];
+    if (!box || !info) return;
+    box.innerHTML = `<strong style="color: var(--primary); font-size: 1.05rem;">` + info.word + `</strong> → <strong>` + info.id + `</strong><br><span style="color: var(--on-surface-variant);">` + info.note + `</span>`;
+  }
+
+  // Teacher Think-Aloud Demo
+  function selectThinkAloud(demoIdx, btn) {
+    currentTaDemo = demoIdx;
+    currentTaStep = 1;
+    if (btn && btn.parentElement) {
+      var pills = btn.parentElement.querySelectorAll(`.filter-pill`);
+      for (var i = 0; i < pills.length; i++) pills[i].classList.remove(`is-active`);
+      btn.classList.add(`is-active`);
+    }
+    renderThinkAloud();
+  }
+
+  function nextThinkAloudStep() {
+    if (currentTaStep < 5) currentTaStep++;
+    renderThinkAloud();
+  }
+
+  function prevThinkAloudStep() {
+    if (currentTaStep > 1) currentTaStep--;
+    renderThinkAloud();
+  }
+
+  function resetThinkAloudStep() {
+    currentTaStep = 1;
+    renderThinkAloud();
+  }
+
+  function renderThinkAloud() {
+    var container = document.getElementById(`thinkaloud-steps-container`);
+    var counter = document.getElementById(`ta-step-counter`);
+    var demo = THINK_ALOUD_DEMOS[currentTaDemo];
+    if (!container || !demo) return;
+
+    if (counter) counter.textContent = `Step ` + currentTaStep + ` of 5`;
+
+    var html = ``;
+    for (var i = 0; i < demo.steps.length; i++) {
+      var stepNum = i + 1;
+      var cls = `ta-step`;
+      if (stepNum < currentTaStep) cls += ` is-revealed`;
+      if (stepNum === currentTaStep) cls += ` is-current`;
+      html += `<div class="` + cls + `"><div class="ta-step-title">` + demo.steps[i].title + `</div><div>` + demo.steps[i].text + `</div></div>`;
+    }
+    container.innerHTML = html;
+
+    // Highlight matching sentence in MOT passage once step >= 3
+    var evIds = [`mot-ev-loc`, `mot-ev-imp`, `mot-ev-carve`];
+    for (var k = 0; k < evIds.length; k++) {
+      var el = document.getElementById(evIds[k]);
+      if (el) el.classList.remove(`is-lit`);
+    }
+    if (currentTaStep >= 3) {
+      var targetEl = document.getElementById(demo.targetEv);
+      if (targetEl) targetEl.classList.add(`is-lit`);
+    }
+  }
+
+  // =========================================================================
+  // PAGE 3: JCOT COLLABORATIVE PRACTICE
+  // =========================================================================
+  function toggleJcotTimer() {
+    var btn = document.getElementById(`jcot-timer-btn`);
+    if (jcotTimerId) {
+      clearInterval(jcotTimerId);
+      jcotTimerId = null;
+      if (btn) btn.textContent = `Resume Timer`;
+      return;
+    }
+    if (btn) btn.textContent = `Pause Timer`;
+    jcotTimerId = setInterval(function () {
+      if (jcotSecondsLeft > 0) {
+        jcotSecondsLeft--;
+        updateJcotTimerDisplay();
+      } else {
+        clearInterval(jcotTimerId);
+        jcotTimerId = null;
+        if (btn) btn.textContent = `Time Up`;
+      }
+    }, 1000);
+  }
+
+  function resetJcotTimer() {
+    if (jcotTimerId) {
+      clearInterval(jcotTimerId);
+      jcotTimerId = null;
+    }
+    jcotSecondsLeft = 180;
+    var btn = document.getElementById(`jcot-timer-btn`);
+    if (btn) btn.textContent = `Start Discussion Timer`;
+    updateJcotTimerDisplay();
+  }
+
+  function updateJcotTimerDisplay() {
+    var el = document.getElementById(`jcot-timer-display`);
+    if (!el) return;
+    var mins = Math.floor(jcotSecondsLeft / 60);
+    var secs = jcotSecondsLeft % 60;
+    el.textContent = (mins < 10 ? `0` : ``) + mins + `:` + (secs < 10 ? `0` : ``) + secs;
+  }
+
+  function saveJcotInput(qNum, val) {
+    appState.jcotInputs[qNum] = val;
+    persistState();
+  }
+
+  function selectJcotMcq(qNum, letter) {
+    appState.jcotMcq[qNum] = letter;
+    renderJcotState();
+    persistState();
+  }
+
+  function submitJcotAnswers() {
+    appState.jcotSubmitted = true;
+    renderJcotState();
+    updateProgressUI();
+    persistState();
+  }
+
+  function resetJcotActivity() {
+    appState.jcotSubmitted = false;
+    appState.jcotMcq = {};
+    appState.jcotInputs = { 1: ``, 2: ``, 3: ``, 4: `` };
+    clearJcotEvidenceHighlights();
+    renderJcotState();
+    updateProgressUI();
+    persistState();
+  }
+
+  function clearJcotEvidenceHighlights() {
+    var ids = [`jcot-ev-1`, `jcot-ev-2`, `jcot-ev-4`, `jcot-ev-5`, `jcot-ev-6`];
+    for (var i = 0; i < ids.length; i++) {
+      var el = document.getElementById(ids[i]);
+      if (el) el.classList.remove(`is-lit`);
+    }
+  }
+
+  function lightJcotEvidence(evId) {
+    clearJcotEvidenceHighlights();
+    var el = document.getElementById(evId);
+    if (el) {
+      el.classList.add(`is-lit`);
+      el.scrollIntoView({ behavior: `smooth`, block: `center` });
+    }
+  }
+
+  function renderJcotState() {
+    for (var i = 1; i <= 4; i++) {
+      var input = document.getElementById(`jcot-q` + i);
+      if (input && input.value !== (appState.jcotInputs[i] || ``)) {
+        input.value = appState.jcotInputs[i] || ``;
+      }
+    }
+
+    var keys = { 5: `A`, 6: `B` };
+    for (var q = 5; q <= 6; q++) {
+      var list = document.getElementById(`jcot-q` + q + `-choices`);
+      if (!list) continue;
+      var btns = list.querySelectorAll(`.choice-btn`);
+      var selected = appState.jcotMcq[q];
+      for (var b = 0; b < btns.length; b++) {
+        btns[b].classList.remove(`is-selected`, `is-correct`, `is-wrong`);
+        var letter = [`A`, `B`, `C`, `D`][b];
+        if (!appState.jcotSubmitted) {
+          if (selected === letter) btns[b].classList.add(`is-selected`);
+        } else {
+          if (letter === keys[q]) btns[b].classList.add(`is-correct`);
+          else if (selected === letter && letter !== keys[q]) btns[b].classList.add(`is-wrong`);
+        }
+      }
+    }
+
+    var keyPanels = {
+      1: `<div class="feedback-box is-positive"><strong>Official Key (Q1):</strong> Central Java, near Magelang. <button type="button" class="btn btn-secondary btn-sm" style="margin-left:8px;" onclick="lightJcotEvidence('jcot-ev-1')">Highlight Evidence</button></div>`,
+      2: `<div class="feedback-box is-positive"><strong>Official Key (Q2):</strong> It is regarded as the largest Buddhist temple in the world. <button type="button" class="btn btn-secondary btn-sm" style="margin-left:8px;" onclick="lightJcotEvidence('jcot-ev-2')">Highlight Evidence</button></div>`,
+      3: `<div class="feedback-box is-positive"><strong>Suggested Answer (Q3):</strong> Borobudur Temple is an important cultural and historical heritage of Indonesia. <button type="button" class="btn btn-secondary btn-sm" style="margin-left:8px;" onclick="lightJcotEvidence('jcot-ev-5')">Highlight Evidence</button></div>`,
+      4: `<div class="feedback-box is-positive"><strong>Suggested Answer (Q4):</strong> Because it has impressive architecture, stone carvings, statues, and historical and cultural value. <button type="button" class="btn btn-secondary btn-sm" style="margin-left:8px;" onclick="lightJcotEvidence('jcot-ev-4')">Highlight Evidence</button></div>`,
+      5: `<div class="feedback-box ` + (appState.jcotMcq[5] === `A` ? `is-positive` : `is-error`) + `"><strong>Official Key (Q5): A.</strong> Evidence: "As a valuable historical and cultural heritage site, Borobudur must be preserved so that future generations can still enjoy it." <button type="button" class="btn btn-secondary btn-sm" style="margin-left:8px;" onclick="lightJcotEvidence('jcot-ev-5')">Highlight Evidence</button></div>`,
+      6: `<div class="feedback-box ` + (appState.jcotMcq[6] === `B` ? `is-positive` : `is-error`) + `"><strong>Official Key (Q6): B.</strong> Evidence: "Its walls are covered with detailed carvings, and hundreds of statues of Buddha sit along the terraces." <button type="button" class="btn btn-secondary btn-sm" style="margin-left:8px;" onclick="lightJcotEvidence('jcot-ev-6')">Highlight Evidence</button></div>`
+    };
+
+    for (var k = 1; k <= 6; k++) {
+      var keyEl = document.getElementById(`jcot-q` + k + `-key`);
+      if (keyEl) keyEl.innerHTML = appState.jcotSubmitted ? keyPanels[k] : ``;
+    }
+
+    var summaryEl = document.getElementById(`jcot-score-summary`);
+    var statusEl = document.getElementById(`jcot-evidence-status`);
+    if (appState.jcotSubmitted) {
+      var mcqScore = (appState.jcotMcq[5] === `A` ? 1 : 0) + (appState.jcotMcq[6] === `B` ? 1 : 0);
+      var writtenCount = 0;
+      for (var w = 1; w <= 4; w++) {
+        if ((appState.jcotInputs[w] || ``).trim().length > 0) writtenCount++;
+      }
+      if (summaryEl) summaryEl.textContent = `JCOT Summary — Evaluative MCQ: ` + mcqScore + `/2 · Open Prompts Completed: ` + writtenCount + `/4`;
+      if (statusEl) {
+        statusEl.className = `feedback-box is-positive`;
+        statusEl.textContent = `Official answer keys unlocked! Click any "Highlight Evidence" button on the right to jump to the supporting sentence above.`;
+      }
+    } else {
+      if (summaryEl) summaryEl.textContent = `Ready to Check Collaborative Work`;
+      if (statusEl) {
+        statusEl.className = `feedback-box is-warning`;
+        statusEl.textContent = `Submit your group answers on the right to unlock the official answer key and highlight exact textual evidence here.`;
+      }
+    }
+
+    // Bridge prompt
+    var bridgeList = document.getElementById(`jcot-bridge-choices`);
+    var bridgeFb = document.getElementById(`jcot-bridge-fb`);
+    if (bridgeList && bridgeFb) {
+      var bBtns = bridgeList.querySelectorAll(`.choice-btn`);
+      for (var m = 0; m < bBtns.length; m++) {
+        bBtns[m].classList.remove(`is-correct`, `is-wrong`);
+      }
+      if (appState.jcotBridge === `tall`) {
+        bBtns[0].classList.add(`is-correct`);
+        bridgeFb.innerHTML = `<div class="feedback-box is-positive">Right! Now you are ready to read the full descriptive text on Prambanan Temple independently in Page 4.</div>`;
+      } else if (appState.jcotBridge === `modern`) {
+        bBtns[1].classList.add(`is-wrong`);
+        bridgeFb.innerHTML = `<div class="feedback-box is-error">Look closely at the pointed stone spires — Prambanan is an ancient Hindu temple complex, not a modern mall.</div>`;
+      } else {
+        bridgeFb.innerHTML = ``;
+      }
+    }
+  }
+
+  function answerBridgePrompt(val) {
+    appState.jcotBridge = val;
+    renderJcotState();
+    persistState();
+  }
+
+  // =========================================================================
+  // PAGE 4: ICOT INDEPENDENT TEST
+  // =========================================================================
+  function goToIcotQuestion(qIdx) {
+    if (qIdx < 0 || qIdx > 2) return;
+    appState.icotCurrentQ = qIdx;
+    renderIcotStage();
+    persistState();
+  }
+
+  function prevIcotQuestion() {
+    if (appState.icotCurrentQ > 0) goToIcotQuestion(appState.icotCurrentQ - 1);
+  }
+
+  function nextIcotQuestion() {
+    if (appState.icotCurrentQ < 2) goToIcotQuestion(appState.icotCurrentQ + 1);
+  }
+
+  function selectIcotOption(qNum, letter) {
+    if (appState.icotSubmitted) return;
+    appState.icotAnswers[qNum] = letter;
+    var valMsg = document.getElementById(`icot-validation-msg`);
+    if (valMsg) valMsg.innerHTML = ``;
+    renderIcotStage();
+    persistState();
+  }
+
+  function saveIcotReason(val) {
+    appState.icotReasons[appState.icotCurrentQ] = val;
+    persistState();
+  }
+
+  function renderIcotStage() {
+    var qIdx = appState.icotCurrentQ || 0;
+    var q = ICOT_QUESTIONS[qIdx];
+    var stageEl = document.getElementById(`icot-question-stage`);
+    var reasonInput = document.getElementById(`icot-reason-input`);
+    var prevBtn = document.getElementById(`icot-prev-q`);
+    var nextBtn = document.getElementById(`icot-next-q`);
+    var submitBtn = document.getElementById(`icot-submit-btn`);
+    if (!stageEl || !q) return;
+
+    for (var i = 0; i < 3; i++) {
+      var pill = document.getElementById(`icot-nav-` + i);
+      if (pill) {
+        pill.classList.toggle(`is-active`, i === qIdx);
+        var answered = Boolean(appState.icotAnswers[ICOT_QUESTIONS[i].num]);
+        pill.textContent = `Q` + (i + 1) + (answered ? ` ✓` : ``);
+      }
+    }
+
+    var selected = appState.icotAnswers[q.num];
+    var choicesHtml = ``;
+    for (var j = 0; j < q.options.length; j++) {
+      var opt = q.options[j];
+      var cls = `choice-btn`;
+      if (!appState.icotSubmitted) {
+        if (selected === opt.key) cls += ` is-selected`;
+      } else {
+        if (opt.key === q.correct) cls += ` is-correct`;
+        else if (selected === opt.key && opt.key !== q.correct) cls += ` is-wrong`;
+      }
+      choicesHtml += `<button type="button" class="` + cls + `" ` + (appState.icotSubmitted ? `disabled` : ``) + ` onclick="selectIcotOption(` + q.num + `, '` + opt.key + `')"><span class="choice-letter">` + opt.key + `</span> ` + opt.text + `</button>`;
+    }
+
+    stageEl.innerHTML = `<span class="badge-terracotta" style="margin-bottom: 10px;">Question ` + q.num + ` of 3 · ` + q.skill + `</span>` +
+      `<p class="q-prompt" style="font-size: 1.125rem;">` + q.prompt + `</p>` +
+      `<div class="choice-list">` + choicesHtml + `</div>`;
+
+    if (reasonInput) {
+      reasonInput.value = appState.icotReasons[qIdx] || ``;
+      reasonInput.disabled = Boolean(appState.icotSubmitted);
+    }
+    if (prevBtn) prevBtn.disabled = qIdx === 0;
+    if (nextBtn) nextBtn.disabled = qIdx === 2;
+    if (submitBtn) submitBtn.style.display = appState.icotSubmitted ? `none` : `inline-flex`;
+
+    renderIcotResultPanel();
+  }
+
+  function submitIcotTest() {
+    var missing = [];
+    for (var i = 0; i < ICOT_QUESTIONS.length; i++) {
+      if (!appState.icotAnswers[ICOT_QUESTIONS[i].num]) missing.push(ICOT_QUESTIONS[i].num);
+    }
+    var valMsg = document.getElementById(`icot-validation-msg`);
+    if (missing.length > 0) {
+      if (valMsg) {
+        valMsg.innerHTML = `<div class="feedback-box is-warning">Please answer Question ` + missing.join(`, `) + ` before submitting your independent test.</div>`;
+      }
+      return;
+    }
+    if (valMsg) valMsg.innerHTML = ``;
+
+    var obtained = 0;
+    for (var j = 0; j < ICOT_QUESTIONS.length; j++) {
+      var q = ICOT_QUESTIONS[j];
+      if (appState.icotAnswers[q.num] === q.correct) obtained += 3;
+    }
+    appState.icotScore9 = obtained;
+    appState.icotSubmitted = true;
+    renderIcotStage();
+    updateProgressUI();
+    persistState();
+  }
+
+  function renderIcotResultPanel() {
+    var panel = document.getElementById(`icot-result-panel`);
+    if (!panel) return;
+    if (!appState.icotSubmitted) {
+      panel.style.display = `none`;
+      clearIcotEvidence();
+      return;
+    }
+    panel.style.display = `block`;
+
+    var obtained = appState.icotScore9 || 0;
+    var pct = Math.round((obtained / 9) * 100);
+    var headline = document.getElementById(`icot-final-headline`);
+    var badge = document.getElementById(`icot-mastery-badge`);
+    if (headline) headline.textContent = `Score: ` + pct + ` / 100 (` + obtained + ` ÷ 9 × 100)`;
+    if (badge) {
+      if (pct >= 76) {
+        badge.className = `badge-emerald`;
+        badge.textContent = `Mastery Achieved (KKTP ≥ 76)`;
+      } else {
+        badge.className = `badge-terracotta`;
+        badge.textContent = `Needs Reinforcement (< 76)`;
+      }
+    }
+
+    var tbody = document.getElementById(`icot-rubric-tbody`);
+    var expList = document.getElementById(`icot-explanations-list`);
+    if (tbody && expList) {
+      var rowsHtml = ``;
+      var expHtml = ``;
+      for (var i = 0; i < ICOT_QUESTIONS.length; i++) {
+        var q = ICOT_QUESTIONS[i];
+        var isRight = appState.icotAnswers[q.num] === q.correct;
+        var pts = isRight ? 3 : 0;
+        rowsHtml += `<tr><td>` + q.competency + `</td><td>` + (isRight ? `Correct (` + q.correct + `)` : `Your choice: ` + appState.icotAnswers[q.num] + ` · Key: ` + q.correct) + `</td><td><strong>` + pts + ` / 3</strong></td></tr>`;
+
+        expHtml += `<div class="feedback-box ` + (isRight ? `is-positive` : `is-error`) + `" style="margin-top: 0;">` +
+          `<strong>Question ` + q.num + ` (` + q.skill + `):</strong> ` + (isRight ? `Correct!` : `Incorrect. Correct answer is ` + q.correct + `.`) + `<br>` +
+          q.explanation +
+          ` <button type="button" class="btn btn-secondary btn-sm" style="margin-top:6px;" onclick="lightIcotEvidence('` + q.evidenceId + `')">Highlight Evidence in Passage</button>` +
+          `</div>`;
+      }
+      rowsHtml += `<tr><td><strong>Total Score</strong></td><td>Formula: (` + obtained + ` ÷ 9) × 100</td><td><strong>` + obtained + ` / 9 (` + pct + `%)</strong></td></tr>`;
+      tbody.innerHTML = rowsHtml;
+      expList.innerHTML = expHtml;
+    }
+  }
+
+  function clearIcotEvidence() {
+    var ids = [`icot-ev-1`, `icot-ev-2a`, `icot-ev-2b`, `icot-ev-3`];
+    for (var i = 0; i < ids.length; i++) {
+      var el = document.getElementById(ids[i]);
+      if (el) el.classList.remove(`is-lit`);
+    }
+  }
+
+  function lightIcotEvidence(evId) {
+    clearIcotEvidence();
+    var el = document.getElementById(evId);
+    if (el) {
+      el.classList.add(`is-lit`);
+      el.scrollIntoView({ behavior: `smooth`, block: `center` });
+    }
+  }
+
+  function handleRetakeIcot(btn) {
+    if (!btn) return;
+    if (btn.dataset.armed !== `true`) {
+      btn.dataset.armed = `true`;
+      btn.textContent = `Click again to retake`;
+      setTimeout(function () {
+        if (btn.dataset.armed === `true`) {
+          btn.dataset.armed = `false`;
+          btn.textContent = `Retake Independent Test`;
+        }
+      }, 4000);
+      return;
+    }
+    btn.dataset.armed = `false`;
+    btn.textContent = `Retake Independent Test`;
+    appState.icotSubmitted = false;
+    appState.icotAnswers = {};
+    appState.icotScore9 = 0;
+    appState.icotCurrentQ = 0;
+    clearIcotEvidence();
+    renderIcotStage();
+    updateProgressUI();
+    persistState();
+  }
+
+  // =========================================================================
+  // PAGE 5: REFLECTION & FINAL PERFORMANCE REPORT
+  // =========================================================================
+  function saveReflectionField(num, val) {
+    appState.reflections[num] = val;
+    persistState();
+  }
+
+  function renderReflectionsState() {
+    for (var i = 1; i <= 5; i++) {
+      var el = document.getElementById(`ref-` + i);
+      if (el && el.value !== (appState.reflections[i] || ``)) {
+        el.value = appState.reflections[i] || ``;
+      }
+    }
+    var fb = document.getElementById(`reflection-feedback`);
+    if (fb) {
+      if (appState.reflectionSubmitted) {
+        fb.innerHTML = `<div class="feedback-box is-positive">Reflection saved! Your full 90-minute lesson report is updated on the right.</div>`;
+      } else {
+        fb.innerHTML = ``;
+      }
+    }
+  }
+
+  function submitReflection() {
+    var empty = false;
+    for (var i = 1; i <= 5; i++) {
+      if ((appState.reflections[i] || ``).trim().length === 0) empty = true;
+    }
+    var fb = document.getElementById(`reflection-feedback`);
+    if (empty) {
+      if (fb) fb.innerHTML = `<div class="feedback-box is-warning">Please fill in all 5 reflection prompts so your teacher can review your takeaways.</div>`;
+      return;
+    }
+    appState.reflectionSubmitted = true;
+    renderReflectionsState();
+    renderPerformanceReport();
+    updateProgressUI();
+    persistState();
+  }
+
+  function renderPerformanceReport() {
+    var status = getCompletionStatus();
+    var icotScoreEl = document.getElementById(`report-icot-score`);
+    var icotStatEl = document.getElementById(`report-icot-status`);
+    var vocabScoreEl = document.getElementById(`report-vocab-score`);
+    var vocabStatEl = document.getElementById(`report-vocab-status`);
+    var tbody = document.getElementById(`report-stage-tbody`);
+
+    if (icotScoreEl && icotStatEl) {
+      if (appState.icotSubmitted) {
+        var pct = Math.round(((appState.icotScore9 || 0) / 9) * 100);
+        icotScoreEl.textContent = pct + `%`;
+        icotStatEl.textContent = (appState.icotScore9 || 0) + ` / 9 (` + (pct >= 76 ? `Mastery Met` : `Review Recommended`) + `)`;
+      } else {
+        icotScoreEl.textContent = `—`;
+        icotStatEl.textContent = `Complete Page 4 first`;
+      }
+    }
+
+    if (vocabScoreEl && vocabStatEl) {
+      vocabScoreEl.textContent = (appState.vocabScore || 0) + ` / 11`;
+      vocabStatEl.textContent = appState.vocabChecked ? `Checked` : `Pending check`;
+    }
+
+    if (tbody) {
+      var rows = [
+        { name: `1. BKOF (Warm-up & Vocabulary)`, done: status.bkofDone, page: 1 },
+        { name: `2. MOT (Borobudur Analysis)`, done: status.motDone, page: 2 },
+        { name: `3. JCOT (Collaborative Practice)`, done: status.jcotDone, page: 3 },
+        { name: `4. ICOT (Prambanan TKA Test)`, done: status.icotDone, page: 4 },
+        { name: `5. Reflection`, done: status.summaryDone, page: 5 }
+      ];
+      var html = ``;
+      for (var i = 0; i < rows.length; i++) {
+        html += `<tr><td>` + rows[i].name + `</td><td>` + (rows[i].done ? `<span class="badge-emerald">Completed</span>` : `<span class="badge-brass">In Progress</span>`) + `</td><td><button type="button" class="btn btn-secondary btn-sm" onclick="goToPage(` + rows[i].page + `)">Open</button></td></tr>`;
+      }
+      tbody.innerHTML = html;
+    }
+  }
+
+  function exportStudentReport() {
+    var icotPct = appState.icotSubmitted ? Math.round(((appState.icotScore9 || 0) / 9) * 100) + `% (` + appState.icotScore9 + `/9)` : `Not submitted`;
+    var lines = [
+      `DISCOVERING INDONESIAN HERITAGE — STUDENT LESSON REPORT`,
+      `Grade XII · Phase F · Descriptive Text (90-Minute GBA Lesson)`,
+      `------------------------------------------------------------`,
+      `BKOF Vocabulary Score: ` + (appState.vocabScore || 0) + ` / 11`,
+      `MOT Passage Analyzed: ` + (appState.motReadConfirmed ? `Yes` : `No`),
+      `JCOT Submitted: ` + (appState.jcotSubmitted ? `Yes` : `No`),
+      `ICOT TKA Score: ` + icotPct,
+      ``,
+      `STUDENT REFLECTION`,
+      `1. What did you learn today? ` + (appState.reflections[1] || `-`),
+      `2. Find info in descriptive text? ` + (appState.reflections[2] || `-`),
+      `3. Draw simple conclusion? ` + (appState.reflections[3] || `-`),
+      `4. What was difficult? ` + (appState.reflections[4] || `-`),
+      `5. Improvement plan: ` + (appState.reflections[5] || `-`)
+    ].join(`\n`);
+
+    var fb = document.getElementById(`reflection-feedback`);
+    try {
+      if (window.notebookAppApi && typeof window.notebookAppApi.triggerFileDownload === `function`) {
+        window.notebookAppApi.triggerFileDownload({
+          content: lines,
+          contentType: `text/plain`,
+          encoding: `UTF-8`,
+          filename: `indonesian-heritage-lesson-report.txt`
+        });
+        if (fb) fb.innerHTML = `<div class="feedback-box is-positive">Your study report (<code>indonesian-heritage-lesson-report.txt</code>) has been prepared for download.</div>`;
+        return;
+      }
+    } catch (e) {
+      // Safe fallback below
+    }
+    if (fb) {
+      fb.innerHTML = `<div class="feedback-box is-positive"><strong>Study Report Ready:</strong><pre style="white-space:pre-wrap; font-family:inherit; margin:8px 0 0; font-size:0.85rem;">` + escapeHtml(lines) + `</pre></div>`;
+    }
+  }
+
+  // =========================================================================
+  // DIFFERENTIATED LEARNING TOOLKIT DRAWER
+  // =========================================================================
+  function openToolkit(tabName) {
+    var backdrop = document.getElementById(`toolkit-backdrop`);
+    var drawer = document.getElementById(`toolkit-drawer`);
+    if (backdrop) backdrop.classList.add(`is-open`);
+    if (drawer) drawer.classList.add(`is-open`);
+    if (tabName) {
+      var btn = document.querySelector(`.drawer-tabs .filter-pill[data-tab="` + tabName + `"]`);
+      switchToolkitTab(tabName, btn);
+    }
+  }
+
+  function closeToolkit() {
+    var backdrop = document.getElementById(`toolkit-backdrop`);
+    var drawer = document.getElementById(`toolkit-drawer`);
+    if (backdrop) backdrop.classList.remove(`is-open`);
+    if (drawer) drawer.classList.remove(`is-open`);
+  }
+
+  function switchToolkitTab(tabName, btn) {
+    var panes = document.querySelectorAll(`.drawer-pane`);
+    for (var i = 0; i < panes.length; i++) panes[i].classList.remove(`is-active`);
+    var target = document.getElementById(`toolkit-pane-` + tabName);
+    if (target) target.classList.add(`is-active`);
+
+    var tabs = document.querySelectorAll(`.drawer-tabs .filter-pill`);
+    for (var j = 0; j < tabs.length; j++) tabs[j].classList.remove(`is-active`);
+    if (btn) btn.classList.add(`is-active`);
+  }
+
+  function answerRemedial(qNum, letter) {
+    appState.remedialAnswers[qNum] = letter;
+    renderRemedialState();
+    persistState();
+  }
+
+  function renderRemedialState() {
+    var key = { 1: `A`, 2: `A`, 3: `A` };
+    var msgs = {
+      1: `Correct! Paragraph 1 explicitly states: "located near Borobudur in Central Java."`,
+      2: `Correct! Calm atmosphere + historical beauty support this simple conclusion.`,
+      3: `Correct! That sentence proves the temple holds artwork inside.`
+    };
+    for (var q = 1; q <= 3; q++) {
+      var list = document.getElementById(`rem-q` + q + `-choices`);
+      var fb = document.getElementById(`rem-q` + q + `-fb`);
+      if (!list || !fb) continue;
+      var val = appState.remedialAnswers[q];
+      var btns = list.querySelectorAll(`.choice-btn`);
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove(`is-correct`, `is-wrong`);
+        var ltr = i === 0 ? `A` : `B`;
+        if (val === ltr) btns[i].classList.add(val === key[q] ? `is-correct` : `is-wrong`);
+      }
+      if (!val) fb.innerHTML = ``;
+      else if (val === key[q]) fb.innerHTML = `<div class="feedback-box is-positive">` + msgs[q] + `</div>`;
+      else fb.innerHTML = `<div class="feedback-box is-error">Look back at the short passage and check the exact sentence.</div>`;
+    }
+  }
+
+  function answerEnrichment(letter) {
+    appState.enrichmentAnswer = letter;
+    renderEnrichmentState();
+    persistState();
+  }
+
+  function saveEnrichmentDraft() {
+    var typeEl = document.getElementById(`enr-type`);
+    var promptEl = document.getElementById(`enr-prompt`);
+    var evEl = document.getElementById(`enr-evidence`);
+    if (!typeEl || !promptEl || !evEl) return;
+    var promptTxt = promptEl.value.trim();
+    var evTxt = evEl.value.trim();
+    if (!promptTxt || !evTxt) return;
+
+    appState.enrichmentDrafts.push({
+      skill: typeEl.value,
+      prompt: promptTxt,
+      evidence: evTxt
+    });
+    promptEl.value = ``;
+    evEl.value = ``;
+    renderEnrichmentState();
+    persistState();
+  }
+
+  function renderEnrichmentState() {
+    var list = document.getElementById(`enr-q1-choices`);
+    var fb = document.getElementById(`enr-q1-fb`);
+    if (list && fb) {
+      var btns = list.querySelectorAll(`.choice-btn`);
+      for (var i = 0; i < btns.length; i++) btns[i].classList.remove(`is-correct`, `is-wrong`);
+      if (appState.enrichmentAnswer === `A`) {
+        btns[0].classList.add(`is-correct`);
+        fb.innerHTML = `<div class="feedback-box is-positive">Excellent inference! Those architectural clues distinguish a royal complex from a temple built purely for worship.</div>`;
+      } else if (appState.enrichmentAnswer === `B`) {
+        btns[1].classList.add(`is-wrong`);
+        fb.innerHTML = `<div class="feedback-box is-error">Re-read paragraph 1: Ratu Boko preserves ancient royal settlement features.</div>`;
+      } else {
+        fb.innerHTML = ``;
+      }
+    }
+
+    var draftsEl = document.getElementById(`enr-saved-list`);
+    if (draftsEl) {
+      var drafts = appState.enrichmentDrafts || [];
+      if (drafts.length === 0) {
+        draftsEl.innerHTML = ``;
+      } else {
+        var html = ``;
+        for (var j = 0; j < drafts.length; j++) {
+          html += `<div class="panel-sand" style="padding: 10px 12px; margin-bottom: 8px;"><span class="badge-brass">` + escapeHtml(drafts[j].skill) + `</span><p style="margin: 6px 0 4px; font-weight: 600;">` + escapeHtml(drafts[j].prompt) + `</p><p style="margin: 0; font-size: 0.85rem; color: var(--on-surface-variant);">Evidence: "` + escapeHtml(drafts[j].evidence) + `"</p></div>`;
+        }
+        draftsEl.innerHTML = html;
+      }
+    }
+  }
+
+  // Boot app & enhance keyboard access on inline vocab words
+  document.addEventListener(`DOMContentLoaded`, function () {
+    var inlineWords = document.querySelectorAll(`.vocab-inline`);
+    for (var i = 0; i < inlineWords.length; i++) {
+      inlineWords[i].setAttribute(`tabindex`, `0`);
+      inlineWords[i].setAttribute(`role`, `button`);
+      inlineWords[i].addEventListener(`keydown`, function (ev) {
+        if (ev.key === `Enter` || ev.key === ` `) {
+          ev.preventDefault();
+          this.click();
+        }
+      });
+    }
+    initApp();
+  });
+</script>
+</body>
+</html>
